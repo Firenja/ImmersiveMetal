@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {"item":  "test:testblockoreover"},
+  "result": {"item": "test:testitem"},
+  "experience": 3,
+  "cookingtime": 100
+}

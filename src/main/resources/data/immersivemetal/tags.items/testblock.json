@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values":
+    [
+        "test:testblockoreover",
+        "test:testblockoreend",
+        "test:testblockorenether"
+    ]
+}
