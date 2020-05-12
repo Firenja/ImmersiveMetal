@@ -1,29 +1,3 @@
 {
-    "_comment": "Items",
-    "item.test.testitem": "Fischstäbchen",
-
-    "_comment": "Tools",
-    "item.test.testpicke": "Fischstäbchenspitzhacke",
-    "item.test.testaxt": "Fischstäbchenaxt",
-    "item.test.testhoe": "Fischstäbchenhacke",
-    "item.test.testschaufel": "Fischstäbchenschaufel",
-    "item.test.testschwert": "Fischstäbchenschwert",
-
-    "_comment": "Armor",
-    "item.test.testhelm": "Fischstäbchenhelm",
-    "item.test.testbrust": "Fischstäbchenbrust",
-    "item.test.testhose": "Fischstäbchenhose",
-    "item.test.testschuhe": "Fischstäbchenschuhe",
-
-
-    "_comment": "BlocksItem",
-    "block.test.testblock": "Fischstäbchenblock",
-
-    "_comment": "BlocksOre",
-    "block.test.testblockoreover": "Fischstäbchenblockoreover",
-    "block.test.testblockorenether": "Fischstäbchenblockorenether",
-    "block.test.testblockoreend": "Fischstäbchenblockoreend",
-
-    "_comment": "Itemgroup",
-    "itemGroup.test": "Fischstäbchen"
+    "_comment": "Items"
 }

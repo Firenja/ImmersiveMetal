@@ -17,7 +17,7 @@ public class IMItemGroup extends ItemGroup
     @Override
     public ItemStack createIcon()
     {
-        return new ItemStack(ItemList.testitem);
+        return new ItemStack(ItemList.arenakIngotBlock);
     }
 
 }
