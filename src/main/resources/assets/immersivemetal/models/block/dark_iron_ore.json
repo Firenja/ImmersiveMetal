@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures":
+  {
+    "all": "immersivemetal:block/dark_iron_ore"
+  }
+}
