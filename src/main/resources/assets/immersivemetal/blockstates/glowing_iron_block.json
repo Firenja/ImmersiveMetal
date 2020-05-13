@@ -1,0 +1,9 @@
+{
+  "variants":
+  {
+    "":
+    {
+      "model": "immersivemetal:block/glowing_iron_block"
+    }
+  }
+}

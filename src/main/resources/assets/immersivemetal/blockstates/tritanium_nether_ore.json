@@ -1,0 +1,9 @@
+{
+  "variants":
+  {
+    "":
+    {
+      "model": "immersivemetal:block/tritanium_nether_ore"
+    }
+  }
+}

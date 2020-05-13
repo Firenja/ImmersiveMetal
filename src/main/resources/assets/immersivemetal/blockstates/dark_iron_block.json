@@ -1,0 +1,9 @@
+{
+  "variants":
+  {
+    "":
+    {
+      "model": "immersivemetal:block/dark_iron_block"
+    }
+  }
+}

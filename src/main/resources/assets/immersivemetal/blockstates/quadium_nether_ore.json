@@ -1,0 +1,9 @@
+{
+  "variants":
+  {
+    "":
+    {
+      "model": "immersivemetal:block/quadium_nether_ore"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "variants":
+  {
+    "":
+    {
+      "model": "immersivemetal:block/platinum_block"
+    }
+  }
+}
