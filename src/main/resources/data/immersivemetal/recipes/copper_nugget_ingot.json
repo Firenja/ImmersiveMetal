@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "S"
+  ],
+  "key":
+  {
+    "S": {"item":  "immersivemetal:copper_ingot"}
+  },
+
+  "result": {"item": "immersivemetal:copper_nugget", "count":  9}
+}

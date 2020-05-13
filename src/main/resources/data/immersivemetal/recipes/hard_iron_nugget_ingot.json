@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "S"
+  ],
+  "key":
+  {
+    "S": {"item":  "immersivemetal:hard_iron_ingot"}
+  },
+
+  "result": {"item": "immersivemetal:hard_iron_nugget", "count":  9}
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "SSS",
+    "SSS",
+    "SSS"
+  ],
+  "key":
+  {
+    "S": {"item":  "immersivemetal:promethium_nugget"}
+  },
+
+  "result": {"item": "immersivemetal:promethium_ingot"}
+}

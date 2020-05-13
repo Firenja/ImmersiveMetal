@@ -198,8 +198,34 @@ public class ImmersiveMetal
                             ItemList.bologniumIngot = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("bolognium_ingot")),
                             ItemList.duratineIngot = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("duratine_ingot")),
                             ItemList.dark_ironIngot = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("dark_iron_ingot")),
-                            ItemList.arenakIngot = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("arenak_ingot"))
-/*
+                            ItemList.arenakIngot = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("arenak_ingot")),
+
+                            //Nugget
+                            ItemList.copperNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("copper_nugget")),
+                            ItemList.tinNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("tin_nugget")),
+                            ItemList.bronzeNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("bronze_nugget")),
+                            ItemList.zincNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("zinc_nugget")),
+                            ItemList.brassNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("brass_nugget")),
+                            ItemList.silverNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("silver_nugget")),
+                            ItemList.platinumNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("platinum_nugget")),
+                            ItemList.promethiumNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("promethium_nugget")),
+                            ItemList.hard_ironNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("hard_iron_nugget")),
+                            ItemList.mithrilNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("mithril_nugget")),
+                            ItemList.orichalcumNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("orichalcum_nugget")),
+                            ItemList.adamantNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("adamant_nugget")),
+                            ItemList.glowing_ironNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("glowing_iron_nugget")),
+                            ItemList.uridiumNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("uridium_nugget")),
+                            ItemList.tritaniumNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("tritanium_nugget")),
+                            ItemList.quadiumNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("quadium_nugget")),
+                            ItemList.etheriumNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("etherium_nugget")),
+                            ItemList.byzaniumNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("byzanium_nugget")),
+                            ItemList.bologniumNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("bolognium_nugget")),
+                            ItemList.duratineNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("duratine_nugget")),
+                            ItemList.dark_ironNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("dark_iron_nugget")),
+                            ItemList.arenakNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("arenak_nugget"))
+
+
+                            /*
 
                             //ore_powder
                             ItemList.copperPowder = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("copperPowder")),
@@ -227,29 +253,6 @@ public class ImmersiveMetal
                             ItemList.goldPowder = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("goldPowder")),
                             ItemList.ironPowder = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("ironPowder")),
 
-                            //Nugget
-                            ItemList.copperNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("copperNugget")),
-                            ItemList.tinNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("tinNugget")),
-                            ItemList.bronzeNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("bronzeNugget")),
-                            ItemList.zincNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("zincNugget")),
-                            ItemList.brassNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("brassNugget")),
-                            ItemList.silverNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("silverNugget")),
-                            ItemList.platinumNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("platinumNugget")),
-                            ItemList.promethiumNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("promethiumNugget")),
-                            ItemList.hard_ironNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("hard_ironNugget")),
-                            ItemList.mithrilNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("mithrilNugget")),
-                            ItemList.orichalcumNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("orichalcumNugget")),
-                            ItemList.adamantNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("adamantNugget")),
-                            ItemList.glowing_ironNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("glowing_ironNugget")),
-                            ItemList.uridiumNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("uridiumNugget")),
-                            ItemList.tritaniumNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("tritaniumNugget")),
-                            ItemList.quadiumNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("quadiumNugget")),
-                            ItemList.etheriumNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("etheriumNugget")),
-                            ItemList.byzaniumNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("byzaniumNugget")),
-                            ItemList.bologniumNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("bologniumNugget")),
-                            ItemList.duratineNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("duratineNugget")),
-                            ItemList.dark_ironNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("dark_ironNugget")),
-                            ItemList.arenakNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("arenakNugget")),
 
 
                             //axe

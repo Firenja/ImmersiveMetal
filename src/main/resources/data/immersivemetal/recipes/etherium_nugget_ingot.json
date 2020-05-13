@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "S"
+  ],
+  "key":
+  {
+    "S": {"item":  "immersivemetal:etherium_ingot"}
+  },
+
+  "result": {"item": "immersivemetal:etherium_nugget", "count":  9}
+}

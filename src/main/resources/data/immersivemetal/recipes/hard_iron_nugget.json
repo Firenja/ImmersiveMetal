@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "SSS",
+    "SSS",
+    "SSS"
+  ],
+  "key":
+  {
+    "S": {"item":  "immersivemetal:hard_iron_nugget"}
+  },
+
+  "result": {"item": "immersivemetal:hard_iron_ingot"}
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "S"
+  ],
+  "key":
+  {
+    "S": {"item":  "immersivemetal:duratine_ingot"}
+  },
+
+  "result": {"item": "immersivemetal:duratine_nugget", "count":  9}
+}

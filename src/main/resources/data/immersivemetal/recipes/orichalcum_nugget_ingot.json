@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "S"
+  ],
+  "key":
+  {
+    "S": {"item":  "immersivemetal:orichalcum_ingot"}
+  },
+
+  "result": {"item": "immersivemetal:orichalcum_nugget", "count":  9}
+}

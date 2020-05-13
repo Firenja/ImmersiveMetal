@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "S"
+  ],
+  "key":
+  {
+    "S": {"item":  "immersivemetal:quadium_ingot"}
+  },
+
+  "result": {"item": "immersivemetal:quadium_nugget", "count":  9}
+}
