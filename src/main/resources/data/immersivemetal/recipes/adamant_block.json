@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "SSS",
+    "SSS",
+    "SSS"
+  ],
+  "key":
+  {
+    "S": {"item":  "immersivemetal:adamant_ingot"}
+  },
+
+  "result": {"item": "immersivemetal:adamant_block"}
+}

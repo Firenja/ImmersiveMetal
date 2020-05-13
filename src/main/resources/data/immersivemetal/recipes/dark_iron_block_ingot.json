@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "S"
+  ],
+  "key":
+  {
+    "S": {"item":  "immersivemetal:dark_iron_block"}
+  },
+
+  "result": {"item": "immersivemetal:dark_iron_ingot", "count":  9}
+}

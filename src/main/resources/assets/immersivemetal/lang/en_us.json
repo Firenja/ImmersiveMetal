@@ -43,5 +43,30 @@
     "block.immersivemetal.tin_ore": "Tinore",
     "block.immersivemetal.tritanium_nether_ore": "Tritaniumore",
     "block.immersivemetal.uridium_nether_ore": "Uridiumore",
-    "block.immersivemetal.zinc_ore": "Zincore"
+    "block.immersivemetal.zinc_ore": "Zincore",
+
+
+    "_comment": "Ingot",
+    "item.immersivemetal.adamant_ingot": "Adamant Ingot",
+    "item.immersivemetal.arenak_ingot": "Arenak Ingot",
+    "item.immersivemetal.brass_ingot": "Brass Ingot",
+    "item.immersivemetal.bronze_ingot": "Bronze Ingot",
+    "item.immersivemetal.bolognium_ingot": "Bolognium Ingot",
+    "item.immersivemetal.byzanium_ingot": "Byzanium Ingot",
+    "item.immersivemetal.copper_ingot": "Copper Ingot",
+    "item.immersivemetal.dark_iron_ingot": "Dark Iron Ingot",
+    "item.immersivemetal.duratine_ingot": "Duratine Ingot",
+    "item.immersivemetal.etherium_ingot": "Etherium Ingot",
+    "item.immersivemetal.glowing_iron_ingot": "Glowing Iron Ingot",
+    "item.immersivemetal.hard_iron_ingot": "Hard Iron Ingot",
+    "item.immersivemetal.mithril_ingot": "Mithril Ingot",
+    "item.immersivemetal.orichalcum_ingot": "Orichalcum Ingot",
+    "item.immersivemetal.platinum_ingot": "Platinum Ingot",
+    "item.immersivemetal.promethium_ingot": "Promethium Ingot",
+    "item.immersivemetal.quadium_ingot": "Quadium Ingot",
+    "item.immersivemetal.silver_ingot": "Silver Ingot",
+    "item.immersivemetal.tin_ingot": "Tin Ingot",
+    "item.immersivemetal.tritanium_ingot": "Tritanium Ingot",
+    "item.immersivemetal.uridium_ingot": "Uridium Ingot",
+    "item.immersivemetal.zinc_ingot": "Zinc Ingot"
 }

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "S"
+  ],
+  "key":
+  {
+    "S": {"item":  "immersivemetal:platinum_block"}
+  },
+
+  "result": {"item": "immersivemetal:platinum_ingot", "count":  9}
+}

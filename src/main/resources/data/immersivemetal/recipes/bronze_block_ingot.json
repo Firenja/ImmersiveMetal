@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "S"
+  ],
+  "key":
+  {
+    "S": {"item":  "immersivemetal:bronze_block"}
+  },
+
+  "result": {"item": "immersivemetal:bronze_ingot", "count":  9}
+}

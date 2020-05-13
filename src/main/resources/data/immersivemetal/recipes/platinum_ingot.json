@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {"item":  "immersivemetal:platinum_ore"},
+  "result": {"item": "immersivemetal:platinum_ingot"},
+  "experience": 3,
+  "cookingtime": 100
+}
