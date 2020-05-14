@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "SS",
+    "ST",
+    " T"
+  ],
+  "key":
+  {
+    "S": {"item":  "immersivemetal:byzanium_ingot"},
+    "T": {"item":  "minecraft:stick"}
+  },
+
+  "result": {"item": "immersivemetal:byzanium_axe"}
+}

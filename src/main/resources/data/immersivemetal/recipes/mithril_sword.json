@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "S",
+    "S",
+    "T"
+  ],
+  "key":
+  {
+    "S": {"item":  "immersivemetal:mithril_ingot"},
+    "T": {"item":  "minecraft:stick"}
+  },
+
+  "result": {"item": "immersivemetal:mithril_sword"}
+}

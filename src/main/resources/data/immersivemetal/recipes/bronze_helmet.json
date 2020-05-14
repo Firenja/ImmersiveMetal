@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "SSS",
+    "S S"
+  ],
+  "key":
+  {
+    "S": {"item":  "immersivemetal:bronze_ingot"}
+  },
+
+  "result": {"item": "immersivemetal:bronze_helmet"}
+}

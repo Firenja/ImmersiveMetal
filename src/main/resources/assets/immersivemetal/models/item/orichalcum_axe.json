@@ -1,0 +1,7 @@
+{
+  "parent": "item/handheld",
+  "textures":
+  {
+    "layer0": "immersivemetal:item/orichalcum_axe"
+  }
+}

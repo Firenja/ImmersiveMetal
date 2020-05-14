@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "SS",
+    " T",
+    " T"
+  ],
+  "key":
+  {
+    "S": {"item":  "immersivemetal:quadium_ingot"},
+    "T": {"item":  "minecraft:stick"}
+  },
+
+  "result": {"item": "immersivemetal:quadium_hoe"}
+}

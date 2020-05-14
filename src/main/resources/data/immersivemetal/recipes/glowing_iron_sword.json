@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "S",
+    "S",
+    "T"
+  ],
+  "key":
+  {
+    "S": {"item":  "immersivemetal:glowing_iron_ingot"},
+    "T": {"item":  "minecraft:stick"}
+  },
+
+  "result": {"item": "immersivemetal:glowing_iron_sword"}
+}

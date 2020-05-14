@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "S",
+    "T",
+    "T"
+  ],
+  "key":
+  {
+    "S": {"item":  "immersivemetal:bronze_ingot"},
+    "T": {"item":  "minecraft:stick"}
+  },
+
+  "result": {"item": "immersivemetal:bronze_shovel"}
+}
