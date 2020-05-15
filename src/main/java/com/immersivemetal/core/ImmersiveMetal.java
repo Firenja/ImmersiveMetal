@@ -13,6 +13,7 @@ import net.minecraft.item.*;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -97,26 +98,26 @@ public class ImmersiveMetal
 
                     //OreBlock
 
-                    BlockList.copperOre = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2, 10).lightValue(0).sound(SoundType.METAL)).setRegistryName(getResourceLocation("copper_ore")),
-                    BlockList.tinOre = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2, 10).lightValue(0).sound(SoundType.METAL)).setRegistryName(getResourceLocation("tin_ore")),
-                    BlockList.zincOre = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2, 10).lightValue(0).sound(SoundType.METAL)).setRegistryName(getResourceLocation("zinc_ore")),
-                    BlockList.silverOre = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2, 10).lightValue(0).sound(SoundType.METAL)).setRegistryName(getResourceLocation("silver_ore")),
-                    BlockList.platinumOre = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(3, 10).lightValue(0).sound(SoundType.METAL)).setRegistryName(getResourceLocation("platinum_ore")),
-                    BlockList.promethiumOre = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(3, 10).lightValue(0).sound(SoundType.METAL)).setRegistryName(getResourceLocation("promethium_ore")),
-                    BlockList.hard_ironOre = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(3, 10).lightValue(0).sound(SoundType.METAL)).setRegistryName(getResourceLocation("hard_iron_ore")),
-                    BlockList.mithrilOre = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(3, 10).lightValue(0).sound(SoundType.METAL)).setRegistryName(getResourceLocation("mithril_ore")),
-                    BlockList.orichalcumOre = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(4, 10).lightValue(0).sound(SoundType.METAL)).setRegistryName(getResourceLocation("orichalcum_ore")),
-                    BlockList.adamantOre = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(4, 10).lightValue(0).sound(SoundType.METAL)).setRegistryName(getResourceLocation("adamant_ore")),
-                    BlockList.glowing_ironOre = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5, 10).lightValue(3).sound(SoundType.METAL)).setRegistryName(getResourceLocation("glowing_iron_nether_ore")),
-                    BlockList.uridiumOre = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5, 10).lightValue(0).sound(SoundType.METAL)).setRegistryName(getResourceLocation("uridium_nether_ore")),
-                    BlockList.tritaniumOre = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5, 10).lightValue(0).sound(SoundType.METAL)).setRegistryName(getResourceLocation("tritanium_nether_ore")),
-                    BlockList.quadiumOre = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5, 10).lightValue(0).sound(SoundType.METAL)).setRegistryName(getResourceLocation("quadium_nether_ore")),
-                    BlockList.etheriumOre = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5, 10).lightValue(0).sound(SoundType.METAL)).setRegistryName(getResourceLocation("etherium_nether_ore")),
-                    BlockList.byzaniumOre = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5, 10).lightValue(0).sound(SoundType.METAL)).setRegistryName(getResourceLocation("byzanium_nether_ore")),
-                    BlockList.bologniumOre = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5, 10).lightValue(0).sound(SoundType.METAL)).setRegistryName(getResourceLocation("bolognium_nether_ore")),
-                    BlockList.duratineOre = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(10, 10).lightValue(0).sound(SoundType.METAL)).setRegistryName(getResourceLocation("duratine_ore")),
-                    BlockList.dark_ironOre = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(15, 10).lightValue(0).sound(SoundType.METAL)).setRegistryName(getResourceLocation("dark_iron_ore")),
-                    BlockList.arenakOre = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(20, 10).lightValue(0).sound(SoundType.METAL)).setRegistryName(getResourceLocation("arenak_ore"))
+                    BlockList.copperOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName(getResourceLocation("copper_ore")),
+                    BlockList.tinOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName(getResourceLocation("tin_ore")),
+                    BlockList.zincOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName(getResourceLocation("zinc_ore")),
+                    BlockList.silverOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName(getResourceLocation("silver_ore")),
+                    BlockList.platinumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName(getResourceLocation("platinum_ore")),
+                    BlockList.promethiumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(3)).setRegistryName(getResourceLocation("promethium_ore")),
+                    BlockList.hard_ironOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(4)).setRegistryName(getResourceLocation("hard_iron_ore")),
+                    BlockList.mithrilOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(5)).setRegistryName(getResourceLocation("mithril_ore")),
+                    BlockList.orichalcumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(4, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(6)).setRegistryName(getResourceLocation("orichalcum_ore")),
+                    BlockList.adamantOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(4, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(7)).setRegistryName(getResourceLocation("adamant_ore")),
+                    BlockList.glowing_ironOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(5, 10).lightValue(3).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(8)).setRegistryName(getResourceLocation("glowing_iron_nether_ore")),
+                    BlockList.uridiumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(5, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(9)).setRegistryName(getResourceLocation("uridium_nether_ore")),
+                    BlockList.tritaniumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(5, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(10)).setRegistryName(getResourceLocation("tritanium_nether_ore")),
+                    BlockList.quadiumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(5, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(11)).setRegistryName(getResourceLocation("quadium_nether_ore")),
+                    BlockList.etheriumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(5, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(12)).setRegistryName(getResourceLocation("etherium_nether_ore")),
+                    BlockList.byzaniumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(5, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(13)).setRegistryName(getResourceLocation("byzanium_nether_ore")),
+                    BlockList.bologniumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(5, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(14)).setRegistryName(getResourceLocation("bolognium_nether_ore")),
+                    BlockList.duratineOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(10, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(14)).setRegistryName(getResourceLocation("duratine_ore")),
+                    BlockList.dark_ironOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(15, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(15)).setRegistryName(getResourceLocation("dark_iron_ore")),
+                    BlockList.arenakOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(20, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(16)).setRegistryName(getResourceLocation("arenak_ore"))
 
             );
             logger.info(modid + ": Blocks reg");

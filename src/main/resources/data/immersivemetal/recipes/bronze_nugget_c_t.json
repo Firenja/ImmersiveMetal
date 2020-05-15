@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "CZ"
+  ],
+  "key":
+  {
+    "C": {"item":  "immersivemetal:copper_nugget"},
+    "Z": {"item":  "immersivemetal:tin_nugget"}
+  },
+
+  "result": {"item": "immersivemetal:brass_nugget", "count":  2}
+}
