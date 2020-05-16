@@ -50,7 +50,6 @@ public class ItemList
     public static Item dark_ironOre;
     public static Item arenakOre;
 
-
     //Ingots
     public static Item copperIngot;
     public static Item tinIngot;
@@ -75,32 +74,6 @@ public class ItemList
     public static Item dark_ironIngot;
     public static Item arenakIngot;
 
-    //ore_powder
-    public static Item copperPowder;
-    public static Item tinPowder;
-    public static Item bronzePowder;
-    public static Item zincPowder;
-    public static Item brassPowder;
-    public static Item silverPowder;
-    public static Item platinumPowder;
-    public static Item promethiumPowder;
-    public static Item hard_ironPowder;
-    public static Item mithrilPowder;
-    public static Item orichalcumPowder;
-    public static Item adamantPowder;
-    public static Item glowing_ironPowder;
-    public static Item uridiumPowder;
-    public static Item tritaniumPowder;
-    public static Item quadiumPowder;
-    public static Item etheriumPowder;
-    public static Item byzaniumPowder;
-    public static Item bologniumPowder;
-    public static Item duratinePowder;
-    public static Item dark_ironPowder;
-    public static Item arenakPowder;
-    public static Item goldPowder;
-    public static Item ironPowder;
-
     //Nugget
     public static Item copperNugget;
     public static Item tinNugget;
@@ -124,7 +97,6 @@ public class ItemList
     public static Item duratineNugget;
     public static Item dark_ironNugget;
     public static Item arenakNugget;
-
 
     //axe
     public static Item copperAxe;
@@ -323,31 +295,4 @@ public class ItemList
     public static Item duratineBoots;
     public static Item dark_ironBoots;
     public static Item arenakBoots;
-
- /*
-    //placehold
-    public static Item copper;
-    public static Item bronze;
-    public static Item brass;
-    public static Item silver;
-    public static Item platinum;
-    public static Item promethium;
-    public static Item hard_iron;
-    public static Item mithril;
-    public static Item orichalcum;
-    public static Item adamant;
-    public static Item glowing_iron;
-    public static Item uridium;
-    public static Item tritanium;
-    public static Item quadium;
-    public static Item etherium;
-    public static Item byzanium;
-    public static Item bolognium;
-    public static Item duratine;
-    public static Item dark_iron;
-    public static Item arenak;
-
-    public static Item tin;
-    public static Item zinc;
-     */
 }

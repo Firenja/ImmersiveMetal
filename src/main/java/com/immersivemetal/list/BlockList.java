@@ -4,7 +4,6 @@ import net.minecraft.block.Block;
 
 public class BlockList
 {
-
     public static Block copperIngotBlock;
     public static Block tinIngotBlock;
     public static Block bronzeIngotBlock;
@@ -28,7 +27,6 @@ public class BlockList
     public static Block dark_ironIngotBlock;
     public static Block arenakIngotBlock;
 
-
     public static Block copperOre;
     public static Block tinOre;
     public static Block zincOre;
@@ -49,6 +47,4 @@ public class BlockList
     public static Block duratineOre;
     public static Block dark_ironOre;
     public static Block arenakOre;
-
-
 }

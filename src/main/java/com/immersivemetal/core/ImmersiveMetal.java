@@ -26,53 +26,38 @@ import org.apache.logging.log4j.Logger;
 @Mod("immersivemetal")
 public class ImmersiveMetal
 {
-    //um nur eine instance von sich selber zuzulassen
     public static ImmersiveMetal instance;
-    //string mit der modid
     public static final String modid = "immersivemetal";
-    //zur ausgabe in logs
     private static final Logger logger = LogManager.getLogger(modid);
-    //die gruppe der items und blöcke im mod
     public static final ItemGroup immersive_metal = new IMItemGroup();
 
     public ImmersiveMetal()
     {
-        //legt beim konstruktion sich selber auf die instanz ab
         instance = this;
-        //legt die setup funktion auf den fml listener ab
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-        //legt die clientRegistries funktion auf den fml listener ab
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientRegistries);
-        //registriert sich selber beim fml
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    //wird beim laden des mods ausgeführt
     private void setup(final FMLCommonSetupEvent event)
     {
         OreGeneration.setupOreGeneration();
-        logger.info("möp");
     }
 
-    //wird beim laden des users ausgeführt
     private void clientRegistries(final FMLClientSetupEvent event)
     {
-        logger.info("mäp");
     }
 
-    //Klasse kümmert sich um das registrieren aller items blöcke und co
     @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
     public static class RegistryEvents
     {
 
-        //regisrtiert alle blöcke zu beginn
         @SubscribeEvent
         public static void regBlocks(final RegistryEvent.Register<Block> event)
         {
             event.getRegistry().registerAll(
 
                     //IngotBlocks
-
                     BlockList.copperIngotBlock = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5, 6).lightValue(0).sound(SoundType.METAL)).setRegistryName(getResourceLocation("copper_block")),
                     BlockList.tinIngotBlock = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5, 6).lightValue(0).sound(SoundType.METAL)).setRegistryName(getResourceLocation("tin_block")),
                     BlockList.bronzeIngotBlock = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5, 6).lightValue(0).sound(SoundType.METAL)).setRegistryName(getResourceLocation("bronze_block")),
@@ -118,14 +103,9 @@ public class ImmersiveMetal
                     BlockList.duratineOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(10, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(14)).setRegistryName(getResourceLocation("duratine_ore")),
                     BlockList.dark_ironOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(15, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(15)).setRegistryName(getResourceLocation("dark_iron_ore")),
                     BlockList.arenakOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(20, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(16)).setRegistryName(getResourceLocation("arenak_ore"))
-
             );
-            logger.info(modid + ": Blocks reg");
-
         }
 
-
-        //regisrtiert alle items zu beginn
         @SubscribeEvent
         public static void regItems(final RegistryEvent.Register<Item> event)
         {
@@ -422,51 +402,9 @@ public class ImmersiveMetal
                             ItemList.duratineBoots = new ArmorItem(ArmorMaterialList.duratine, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("duratine_boots"),
                             ItemList.dark_ironBoots = new ArmorItem(ArmorMaterialList.dark_iron, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("dark_iron_boots"),
                             ItemList.arenakBoots = new ArmorItem(ArmorMaterialList.arenak, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("arenak_boots")
-
-
-                            /*
-
-                            //ore_powder
-                            ItemList.copperPowder = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("copperPowder")),
-                            ItemList.tinPowder = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("tinPowder")),
-                            ItemList.bronzePowder = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("bronzePowder")),
-                            ItemList.zincPowder = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("zincPowder")),
-                            ItemList.brassPowder = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("brassPowder")),
-                            ItemList.silverPowder = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("silverPowder")),
-                            ItemList.platinumPowder = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("platinumPowder")),
-                            ItemList.promethiumPowder = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("promethiumPowder")),
-                            ItemList.hard_ironPowder = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("hard_ironPowder")),
-                            ItemList.mithrilPowder = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("mithrilPowder")),
-                            ItemList.orichalcumPowder = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("orichalcumPowder")),
-                            ItemList.adamantPowder = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("adamantPowder")),
-                            ItemList.glowing_ironPowder = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("glowing_ironPowder")),
-                            ItemList.uridiumPowder = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("uridiumPowder")),
-                            ItemList.tritaniumPowder = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("tritaniumPowder")),
-                            ItemList.quadiumPowder = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("quadiumPowder")),
-                            ItemList.etheriumPowder = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("etheriumPowder")),
-                            ItemList.byzaniumPowder = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("byzaniumPowder")),
-                            ItemList.bologniumPowder = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("bologniumPowder")),
-                            ItemList.duratinePowder = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("duratinePowder")),
-                            ItemList.dark_ironPowder = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("dark_ironPowder")),
-                            ItemList.arenakPowder = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("arenakPowder")),
-                            ItemList.goldPowder = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("goldPowder")),
-                            ItemList.ironPowder = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("ironPowder")),
-
-
-
-
-
-
-
-*/
-
                     );
-            logger.info(modid + ": Items reg");
 
         }
-
-
-        //gibt die ressourcenloc des items zurück
         private static ResourceLocation getResourceLocation(String name) {
             return new ResourceLocation(modid, name);
         }

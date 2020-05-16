@@ -6,7 +6,6 @@ import net.minecraft.item.crafting.Ingredient;
 
 public enum ToolMaterialList implements IItemTier
 {
-    //gibt die tool tierliste an mit den werten
     Copper(4,10,200,2,5,ItemList.copperIngot),
     Bronze(4,10,260,2,5,ItemList.bronzeIngot),
     Brass(4,10,280,2,10,ItemList.brassIngot),
@@ -28,34 +27,13 @@ public enum ToolMaterialList implements IItemTier
     Dark_iron(10,10,2700,16,45,ItemList.dark_ironIngot),
     Arenak(12,10,3000,16,50,ItemList.arenakIngot);
 
-
-
-
-
-
-
-
-    //der ausführbare schaden
     private float attackDamage;
-
-    //die effiziens
     private float effi;
-
-    //die haltbarkeit
     private int dura;
-
-    //das abbaulevel
     private int harvelvl;
-
-    //wie hoch das item verzaubert werden kann
     private int entchantabi;
-
-
-    //welches material zum reppen benötigt wird
     private Item repairmats;
 
-
-    //konstruk zum festlegen der werte
     ToolMaterialList(float attackDamagevalue, float effivalue, int duravalue, int harvelvlvalue, int entchantabivalue, Item repairmatsvalue)
     {
         attackDamage = attackDamagevalue;

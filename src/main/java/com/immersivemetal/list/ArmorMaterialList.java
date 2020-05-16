@@ -31,11 +31,6 @@ public enum ArmorMaterialList implements IArmorMaterial
     dark_iron("dark_iron",2110,new int[]{5,10,8,5},45,ItemList.dark_ironIngot,"item.armor.equip",16),
     arenak("arenak",2190,new int[]{6,11,9,6},50,ItemList.arenakIngot,"item.armor.equip",20);
 
-
-
-
-
-
     private String name;
     private int[] dmgredu;
     private int dura;
