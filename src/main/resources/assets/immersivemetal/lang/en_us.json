@@ -290,5 +290,8 @@
     "item.immersivemetal.quadium_helmet": "Quadium Helmet",
     "item.immersivemetal.silver_helmet": "Silver Helmet",
     "item.immersivemetal.tritanium_helmet": "Tritanium Helmet",
-    "item.immersivemetal.uridium_helmet": "Uridium Helmet"
+    "item.immersivemetal.uridium_helmet": "Uridium Helmet",
+
+
+    "itemGroup.immersivemetal": "Immersive Metal"
 }

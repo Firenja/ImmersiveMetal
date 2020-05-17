@@ -9,7 +9,7 @@ public class IMItemGroup extends ItemGroup
 
     public IMItemGroup()
     {
-        super("Immersive Metal");
+        super("immersivemetal");
     }
 
     @Override
