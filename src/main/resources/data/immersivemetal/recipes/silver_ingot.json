@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": {"item":  "immersivemetal:silver_ore"},
+  "ingredient": {"tag":  "forge:ores/silver"},
   "result": {"item": "immersivemetal:silver_ingot"},
   "experience": 3,
   "cookingtime": 100

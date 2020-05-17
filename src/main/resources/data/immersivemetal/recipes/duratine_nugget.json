@@ -9,7 +9,7 @@
   ],
   "key":
   {
-    "S": {"item":  "immersivemetal:duratine_nugget"}
+    "S": {"tag":  "forge:nuggets/duratine"}
   },
 
   "result": {"item": "immersivemetal:duratine_ingot"}

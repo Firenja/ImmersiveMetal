@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": {"item":  "immersivemetal:etherium_nether_ore"},
+  "ingredient": {"tag":  "forge:ores/etherium"},
   "result": {"item": "immersivemetal:etherium_ingot"},
   "experience": 3,
   "cookingtime": 100

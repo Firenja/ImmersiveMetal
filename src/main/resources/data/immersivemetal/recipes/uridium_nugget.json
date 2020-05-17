@@ -9,7 +9,7 @@
   ],
   "key":
   {
-    "S": {"item":  "immersivemetal:uridium_nugget"}
+    "S": {"tag":  "forge:nuggets/uridium"}
   },
 
   "result": {"item": "immersivemetal:uridium_ingot"}

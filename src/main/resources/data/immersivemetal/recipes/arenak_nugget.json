@@ -9,7 +9,7 @@
   ],
   "key":
   {
-    "S": {"item":  "immersivemetal:arenak_nugget"}
+    "S": {"tag":  "forge:nuggets/arenak"}
   },
 
   "result": {"item": "immersivemetal:arenak_ingot"}

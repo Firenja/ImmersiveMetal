@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": {"item":  "immersivemetal:orichalcum_ore"},
+  "ingredient": {"tag":  "forge:ores/orichalcum"},
   "result": {"item": "immersivemetal:orichalcum_ingot"},
   "experience": 3,
   "cookingtime": 100

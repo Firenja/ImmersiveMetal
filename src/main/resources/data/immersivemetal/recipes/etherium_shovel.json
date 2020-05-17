@@ -9,7 +9,7 @@
   ],
   "key":
   {
-    "S": {"item":  "immersivemetal:etherium_ingot"},
+    "S": {"tag":  "forge:ingots/etherium"},
     "T": {"item":  "minecraft:stick"}
   },
 

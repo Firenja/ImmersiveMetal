@@ -9,7 +9,7 @@
   ],
   "key":
   {
-    "S": {"item":  "immersivemetal:silver_nugget"}
+    "S": {"tag":  "forge:nuggets/silver"}
   },
 
   "result": {"item": "immersivemetal:silver_ingot"}

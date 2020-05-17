@@ -7,7 +7,7 @@
   ],
   "key":
   {
-    "S": {"item":  "immersivemetal:platinum_ingot"}
+    "S": {"tag":  "forge:ingots/platinum"}
   },
 
   "result": {"item": "immersivemetal:platinum_nugget", "count":  9}

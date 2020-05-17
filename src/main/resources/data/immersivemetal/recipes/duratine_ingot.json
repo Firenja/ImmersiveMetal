@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": {"item":  "immersivemetal:duratine_ore"},
+  "ingredient": {"tag":  "forge:ores/duratine"},
   "result": {"item": "immersivemetal:duratine_ingot"},
   "experience": 3,
   "cookingtime": 100

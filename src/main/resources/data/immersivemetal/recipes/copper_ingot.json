@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": {"item":  "immersivemetal:copper_ore"},
+  "ingredient": {"tag":  "forge:ores/copper"},
   "result": {"item": "immersivemetal:copper_ingot"},
   "experience": 3,
   "cookingtime": 100

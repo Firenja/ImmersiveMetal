@@ -9,7 +9,7 @@
   ],
   "key":
   {
-    "S": {"item":  "immersivemetal:promethium_ingot"}
+    "S": {"tag":  "forge:ingots/promethium"}
   },
 
   "result": {"item": "immersivemetal:promethium_block"}

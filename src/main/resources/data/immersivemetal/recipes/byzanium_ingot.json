@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": {"item":  "immersivemetal:byzanium_nether_ore"},
+  "ingredient": {"tag":  "forge:ores/byzanium"},
   "result": {"item": "immersivemetal:byzanium_ingot"},
   "experience": 3,
   "cookingtime": 100

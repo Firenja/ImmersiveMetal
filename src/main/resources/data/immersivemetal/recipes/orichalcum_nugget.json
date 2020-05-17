@@ -9,7 +9,7 @@
   ],
   "key":
   {
-    "S": {"item":  "immersivemetal:orichalcum_nugget"}
+    "S": {"tag":  "forge:nuggets/orichalcum"}
   },
 
   "result": {"item": "immersivemetal:orichalcum_ingot"}

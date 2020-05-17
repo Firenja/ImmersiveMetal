@@ -7,8 +7,8 @@
   ],
   "key":
   {
-    "C": {"item":  "immersivemetal:copper_nugget"},
-    "Z": {"item":  "immersivemetal:tin_nugget"}
+    "C": {"tag":  "forge:nuggets/copper"},
+    "Z": {"tag":  "forge:nuggets/tin"}
   },
 
   "result": {"item": "immersivemetal:brass_nugget", "count":  2}

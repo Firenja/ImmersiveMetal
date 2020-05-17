@@ -7,7 +7,7 @@
   ],
   "key":
   {
-    "S": {"item":  "immersivemetal:arenak_ingot"}
+    "S": {"tag":  "forge:ingots/arenak"}
   },
 
   "result": {"item": "immersivemetal:arenak_nugget", "count":  9}

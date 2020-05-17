@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": {"item":  "immersivemetal:arenak_ore"},
+  "ingredient": {"tag":  "forge:ores/arenak"},
   "result": {"item": "immersivemetal:arenak_ingot"},
   "experience": 3,
   "cookingtime": 100

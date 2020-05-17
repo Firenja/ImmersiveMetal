@@ -8,7 +8,7 @@
   ],
   "key":
   {
-    "S": {"item":  "immersivemetal:hard_iron_ingot"}
+    "S": {"tag":  "forge:ingots/hard_iron"}
   },
 
   "result": {"item": "immersivemetal:hard_iron_boots"}

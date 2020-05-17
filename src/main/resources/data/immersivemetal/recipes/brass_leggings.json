@@ -9,7 +9,7 @@
   ],
   "key":
   {
-    "S": {"item":  "immersivemetal:brass_ingot"}
+    "S": {"tag":  "forge:ingots/brass"}
   },
 
   "result": {"item": "immersivemetal:brass_leggings"}

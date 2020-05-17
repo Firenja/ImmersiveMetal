@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": {"item":  "immersivemetal:tritanium_nether_ore"},
+  "ingredient": {"tag":  "forge:ores/tritanium"},
   "result": {"item": "immersivemetal:tritanium_ingot"},
   "experience": 3,
   "cookingtime": 100

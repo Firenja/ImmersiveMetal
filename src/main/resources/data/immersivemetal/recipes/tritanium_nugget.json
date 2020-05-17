@@ -9,7 +9,7 @@
   ],
   "key":
   {
-    "S": {"item":  "immersivemetal:tritanium_nugget"}
+    "S": {"tag":  "forge:nuggets/tritanium"}
   },
 
   "result": {"item": "immersivemetal:tritanium_ingot"}

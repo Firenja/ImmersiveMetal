@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": {"item":  "immersivemetal:promethium_ore"},
+  "ingredient": {"tag":  "forge:ores/promethium"},
   "result": {"item": "immersivemetal:promethium_ingot"},
   "experience": 3,
   "cookingtime": 100

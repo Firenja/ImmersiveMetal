@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": {"item":  "immersivemetal:hard_iron_ore"},
+  "ingredient": {"tag":  "forge:ores/hard_iron"},
   "result": {"item": "immersivemetal:hard_iron_ingot"},
   "experience": 3,
   "cookingtime": 100

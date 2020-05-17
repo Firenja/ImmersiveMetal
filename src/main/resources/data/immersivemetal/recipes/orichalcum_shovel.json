@@ -9,7 +9,7 @@
   ],
   "key":
   {
-    "S": {"item":  "immersivemetal:orichalcum_ingot"},
+    "S": {"tag":  "forge:ingots/orichalcum"},
     "T": {"item":  "minecraft:stick"}
   },
 

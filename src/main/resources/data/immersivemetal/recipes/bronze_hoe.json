@@ -9,7 +9,7 @@
   ],
   "key":
   {
-    "S": {"item":  "immersivemetal:bronze_ingot"},
+    "S": {"tag":  "forge:ingots/bronze"},
     "T": {"item":  "minecraft:stick"}
   },
 

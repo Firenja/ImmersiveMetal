@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": {"item":  "immersivemetal:tin_ore"},
+  "ingredient": {"tag":  "forge:ores/tin"},
   "result": {"item": "immersivemetal:tin_ingot"},
   "experience": 3,
   "cookingtime": 100

@@ -9,7 +9,7 @@
   ],
   "key":
   {
-    "S": {"item":  "immersivemetal:byzanium_nugget"}
+    "S": {"tag":  "forge:nuggets/byzanium"}
   },
 
   "result": {"item": "immersivemetal:byzanium_ingot"}

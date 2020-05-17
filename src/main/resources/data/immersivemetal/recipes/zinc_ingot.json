@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": {"item":  "immersivemetal:zinc_ore"},
+  "ingredient": {"tag":  "forge:ores/zinc"},
   "result": {"item": "immersivemetal:zinc_ingot"},
   "experience": 3,
   "cookingtime": 100

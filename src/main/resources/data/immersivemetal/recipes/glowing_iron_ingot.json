@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": {"item":  "immersivemetal:glowing_iron_nether_ore"},
+  "ingredient": {"tag":  "forge:ores/glowing_iron"},
   "result": {"item": "immersivemetal:glowing_iron_ingot"},
   "experience": 3,
   "cookingtime": 100

@@ -8,7 +8,7 @@
   ],
   "key":
   {
-    "S": {"item":  "immersivemetal:mithril_ingot"}
+    "S": {"tag":  "forge:ingots/mithril"}
   },
 
   "result": {"item": "immersivemetal:mithril_helmet"}

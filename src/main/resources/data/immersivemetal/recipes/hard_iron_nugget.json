@@ -9,7 +9,7 @@
   ],
   "key":
   {
-    "S": {"item":  "immersivemetal:hard_iron_nugget"}
+    "S": {"tag":  "forge:nuggets/hard_iron"}
   },
 
   "result": {"item": "immersivemetal:hard_iron_ingot"}

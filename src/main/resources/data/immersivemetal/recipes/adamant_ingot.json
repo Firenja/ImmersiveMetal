@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": {"item":  "immersivemetal:adamant_ore"},
+  "ingredient": {"tag":  "forge:ores/adamant"},
   "result": {"item": "immersivemetal:adamant_ingot"},
   "experience": 3,
   "cookingtime": 100

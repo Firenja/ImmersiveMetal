@@ -9,7 +9,7 @@
   ],
   "key":
   {
-    "S": {"item":  "immersivemetal:orichalcum_ingot"}
+    "S": {"tag":  "forge:ingots/orichalcum"}
   },
 
   "result": {"item": "immersivemetal:orichalcum_chestplate"}

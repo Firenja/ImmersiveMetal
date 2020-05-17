@@ -8,7 +8,7 @@
   ],
   "key":
   {
-    "S": {"item":  "immersivemetal:dark_iron_ingot"}
+    "S": {"tag":  "forge:ingots/dark_iron"}
   },
 
   "result": {"item": "immersivemetal:dark_iron_boots"}
