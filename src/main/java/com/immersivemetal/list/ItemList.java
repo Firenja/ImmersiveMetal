@@ -295,4 +295,25 @@ public class ItemList
     public static Item duratineBoots;
     public static Item dark_ironBoots;
     public static Item arenakBoots;
+
+    public static Item copperhorsearmor;
+    public static Item bronzehorsearmor;
+    public static Item brasshorsearmor;
+    public static Item silverhorsearmor;
+    public static Item platinumhorsearmor;
+    public static Item promethiumhorsearmor;
+    public static Item hard_ironhorsearmor;
+    public static Item mithrilhorsearmor;
+    public static Item orichalcumhorsearmor;
+    public static Item adamanthorsearmor;
+    public static Item glowing_ironhorsearmor;
+    public static Item uridiumhorsearmor;
+    public static Item tritaniumhorsearmor;
+    public static Item quadiumhorsearmor;
+    public static Item etheriumhorsearmor;
+    public static Item byzaniumhorsearmor;
+    public static Item bologniumhorsearmor;
+    public static Item duratinehorsearmor;
+    public static Item dark_ironhorsearmor;
+    public static Item arenakhorsearmor;
 }

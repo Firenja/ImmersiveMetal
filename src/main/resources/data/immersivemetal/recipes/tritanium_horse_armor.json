@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "S S",
+    "SSS",
+    "S S"
+  ],
+  "key":
+  {
+    "S": {"tag":  "forge:ingots/tritanium"}
+  },
+
+  "result": {"item": "immersivemetal:tritanium_horse_armor"}
+}

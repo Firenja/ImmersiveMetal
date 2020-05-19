@@ -401,7 +401,30 @@ public class ImmersiveMetal
                             ItemList.bologniumBoots = new ArmorItem(ArmorMaterialList.bolognium, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("bolognium_boots"),
                             ItemList.duratineBoots = new ArmorItem(ArmorMaterialList.duratine, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("duratine_boots"),
                             ItemList.dark_ironBoots = new ArmorItem(ArmorMaterialList.dark_iron, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("dark_iron_boots"),
-                            ItemList.arenakBoots = new ArmorItem(ArmorMaterialList.arenak, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("arenak_boots")
+                            ItemList.arenakBoots = new ArmorItem(ArmorMaterialList.arenak, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("arenak_boots"),
+
+                            //horse
+                            ItemList.copperhorsearmor = new HorseArmorItem(5,getResourceLocation("textures/entity/horse/armor/horse_armor_copper.png"),new Item.Properties().group(immersive_metal)).setRegistryName("copper_horse_armor"),
+                            ItemList.bronzehorsearmor = new HorseArmorItem(7,getResourceLocation("textures/entity/horse/armor/horse_armor_bronze.png"),new Item.Properties().group(immersive_metal)).setRegistryName("bronze_horse_armor"),
+                            ItemList.brasshorsearmor = new HorseArmorItem(7,getResourceLocation("textures/entity/horse/armor/horse_armor_brass.png"),new Item.Properties().group(immersive_metal)).setRegistryName("brass_horse_armor"),
+                            ItemList.silverhorsearmor = new HorseArmorItem(8,getResourceLocation("textures/entity/horse/armor/horse_armor_silver.png"),new Item.Properties().group(immersive_metal)).setRegistryName("silver_horse_armor"),
+                            ItemList.platinumhorsearmor = new HorseArmorItem(11,getResourceLocation("textures/entity/horse/armor/horse_armor_platinum.png"),new Item.Properties().group(immersive_metal)).setRegistryName("platinum_horse_armor"),
+                            ItemList.promethiumhorsearmor = new HorseArmorItem(11,getResourceLocation("textures/entity/horse/armor/horse_armor_promethium.png"),new Item.Properties().group(immersive_metal)).setRegistryName("promethium_horse_armor"),
+                            ItemList.hard_ironhorsearmor = new HorseArmorItem(11,getResourceLocation("textures/entity/horse/armor/horse_armor_hard_iron.png"),new Item.Properties().group(immersive_metal)).setRegistryName("hard_iron_horse_armor"),
+                            ItemList.mithrilhorsearmor = new HorseArmorItem(11,getResourceLocation("textures/entity/horse/armor/horse_armor_mithril.png"),new Item.Properties().group(immersive_metal)).setRegistryName("mithril_horse_armor"),
+                            ItemList.orichalcumhorsearmor = new HorseArmorItem(11,getResourceLocation("textures/entity/horse/armor/horse_armor_orichalcum.png"),new Item.Properties().group(immersive_metal)).setRegistryName("orichalcum_horse_armor"),
+                            ItemList.adamanthorsearmor = new HorseArmorItem(12,getResourceLocation("textures/entity/horse/armor/horse_armor_adamant.png"),new Item.Properties().group(immersive_metal)).setRegistryName("adamant_horse_armor"),
+                            ItemList.glowing_ironhorsearmor = new HorseArmorItem(12,getResourceLocation("textures/entity/horse/armor/horse_armor_glowing_iron.png"),new Item.Properties().group(immersive_metal)).setRegistryName("glowing_iron_horse_armor"),
+                            ItemList.uridiumhorsearmor = new HorseArmorItem(12,getResourceLocation("textures/entity/horse/armor/horse_armor_uridium.png"),new Item.Properties().group(immersive_metal)).setRegistryName("uridium_horse_armor"),
+                            ItemList.tritaniumhorsearmor = new HorseArmorItem(12,getResourceLocation("textures/entity/horse/armor/horse_armor_tritanium.png"),new Item.Properties().group(immersive_metal)).setRegistryName("tritanium_horse_armor"),
+                            ItemList.quadiumhorsearmor = new HorseArmorItem(12,getResourceLocation("textures/entity/horse/armor/horse_armor_quadium.png"),new Item.Properties().group(immersive_metal)).setRegistryName("quadium_horse_armor"),
+                            ItemList.etheriumhorsearmor = new HorseArmorItem(13,getResourceLocation("textures/entity/horse/armor/horse_armor_etherium.png"),new Item.Properties().group(immersive_metal)).setRegistryName("etherium_horse_armor"),
+                            ItemList.byzaniumhorsearmor = new HorseArmorItem(13,getResourceLocation("textures/entity/horse/armor/horse_armor_byzanium.png"),new Item.Properties().group(immersive_metal)).setRegistryName("byzanium_horse_armor"),
+                            ItemList.bologniumhorsearmor = new HorseArmorItem(13,getResourceLocation("textures/entity/horse/armor/horse_armor_bolognium.png"),new Item.Properties().group(immersive_metal)).setRegistryName("bolognium_horse_armor"),
+                            ItemList.duratinehorsearmor = new HorseArmorItem(14,getResourceLocation("textures/entity/horse/armor/horse_armor_duratine.png"),new Item.Properties().group(immersive_metal)).setRegistryName("duratine_horse_armor"),
+                            ItemList.dark_ironhorsearmor = new HorseArmorItem(14,getResourceLocation("textures/entity/horse/armor/horse_armor_dark_iron.png"),new Item.Properties().group(immersive_metal)).setRegistryName("dark_iron_horse_armor"),
+                            ItemList.arenakhorsearmor = new HorseArmorItem(15,getResourceLocation("textures/entity/horse/armor/horse_armor_arenak.png"),new Item.Properties().group(immersive_metal)).setRegistryName("arenak_horse_armor")
+
                     );
 
         }
