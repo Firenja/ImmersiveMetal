@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {"tag":  "forge:ores/enderit"},
+  "result": {"item": "immersivemetal:enderit_ingot"},
+  "experience": 3,
+  "cookingtime": 100
+}

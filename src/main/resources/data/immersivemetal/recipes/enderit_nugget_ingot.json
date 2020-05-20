@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "S"
+  ],
+  "key":
+  {
+    "S": {"tag":  "forge:ingots/enderit"}
+  },
+
+  "result": {"item": "immersivemetal:enderit_nugget", "count":  9}
+}

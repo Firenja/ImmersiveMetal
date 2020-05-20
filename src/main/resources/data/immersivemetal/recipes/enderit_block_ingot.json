@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "S"
+  ],
+  "key":
+  {
+    "S": {"item":  "immersivemetal:enderit_block"}
+  },
+
+  "result": {"item": "immersivemetal:enderit_ingot", "count":  9}
+}

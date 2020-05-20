@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "S",
+    "T",
+    "T"
+  ],
+  "key":
+  {
+    "S": {"tag":  "forge:ingots/enderium"},
+    "T": {"item":  "minecraft:stick"}
+  },
+
+  "result": {"item": "immersivemetal:enderium_shovel"}
+}

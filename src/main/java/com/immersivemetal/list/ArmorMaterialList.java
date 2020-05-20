@@ -29,7 +29,9 @@ public enum ArmorMaterialList implements IArmorMaterial
     bolognium("bolognium",1950,new int[]{4,9,7,4},35,ItemList.bologniumIngot,"item.armor.equip",8),
     duratine("duratine",2030,new int[]{4,9,7,4},40,ItemList.duratineIngot,"item.armor.equip",6),
     dark_iron("dark_iron",2110,new int[]{5,10,8,5},45,ItemList.dark_ironIngot,"item.armor.equip",11),
-    arenak("arenak",2190,new int[]{6,11,9,6},50,ItemList.arenakIngot,"item.armor.equip",12);
+    arenak("arenak",2190,new int[]{6,11,9,6},50,ItemList.arenakIngot,"item.armor.equip",12),
+    enderium("enderium",2110,new int[]{5,10,8,5},45,ItemList.enderiumIngot,"item.armor.equip",11),
+    enderit("enderit",2190,new int[]{6,11,9,6},50,ItemList.enderitIngot,"item.armor.equip",12);
 
     private String name;
     private int[] dmgredu;

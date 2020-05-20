@@ -26,6 +26,8 @@ public class BlockList
     public static Block duratineIngotBlock;
     public static Block dark_ironIngotBlock;
     public static Block arenakIngotBlock;
+    public static Block enderiumIngotBlock;
+    public static Block enderitIngotBlock;
 
     public static Block copperOre;
     public static Block tinOre;
@@ -47,4 +49,6 @@ public class BlockList
     public static Block duratineOre;
     public static Block dark_ironOre;
     public static Block arenakOre;
+    public static Block enderiumOre;
+    public static Block enderitOre;
 }

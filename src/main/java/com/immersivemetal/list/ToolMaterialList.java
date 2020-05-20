@@ -25,7 +25,9 @@ public enum ToolMaterialList implements IItemTier
     Bolognium(9,10,2300,11,35,ItemList.bologniumIngot),
     Duratine(9,10,2500,11,40,ItemList.duratineIngot),
     Dark_iron(10,10,2700,12,45,ItemList.dark_ironIngot),
-    Arenak(12,10,3000,13,50,ItemList.arenakIngot);
+    Arenak(12,10,3000,13,50,ItemList.arenakIngot),
+    Enderium(10,10,2200,12,50,ItemList.enderiumIngot),
+    Enderit(12,10,2800,13,50,ItemList.enderitIngot);
 
     private float attackDamage;
     private float effi;

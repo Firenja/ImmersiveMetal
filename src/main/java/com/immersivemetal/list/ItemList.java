@@ -27,6 +27,8 @@ public class ItemList
     public static Item duratineIngotBlock;
     public static Item dark_ironIngotBlock;
     public static Item arenakIngotBlock;
+    public static Item enderiumIngotBlock;
+    public static Item enderitIngotBlock;
 
     //oreblockitem
     public static Item copperOre;
@@ -49,6 +51,8 @@ public class ItemList
     public static Item duratineOre;
     public static Item dark_ironOre;
     public static Item arenakOre;
+    public static Item enderiumOre;
+    public static Item enderitOre;
 
     //Ingots
     public static Item copperIngot;
@@ -73,6 +77,8 @@ public class ItemList
     public static Item duratineIngot;
     public static Item dark_ironIngot;
     public static Item arenakIngot;
+    public static Item enderiumIngot;
+    public static Item enderitIngot;
 
     //Nugget
     public static Item copperNugget;
@@ -97,6 +103,8 @@ public class ItemList
     public static Item duratineNugget;
     public static Item dark_ironNugget;
     public static Item arenakNugget;
+    public static Item enderiumNugget;
+    public static Item enderitNugget;
 
     //axe
     public static Item copperAxe;
@@ -119,6 +127,8 @@ public class ItemList
     public static Item duratineAxe;
     public static Item dark_ironAxe;
     public static Item arenakAxe;
+    public static Item enderiumAxe;
+    public static Item enderitAxe;
 
     //Shovel
     public static Item copperShovel;
@@ -141,6 +151,8 @@ public class ItemList
     public static Item duratineShovel;
     public static Item dark_ironShovel;
     public static Item arenakShovel;
+    public static Item enderiumShovel;
+    public static Item enderitShovel;
 
     //Pickaxe
     public static Item copperPickaxe;
@@ -163,6 +175,8 @@ public class ItemList
     public static Item duratinePickaxe;
     public static Item dark_ironPickaxe;
     public static Item arenakPickaxe;
+    public static Item enderiumPickaxe;
+    public static Item enderitPickaxe;
 
     //Hoe
     public static Item copperHoe;
@@ -185,6 +199,8 @@ public class ItemList
     public static Item duratineHoe;
     public static Item dark_ironHoe;
     public static Item arenakHoe;
+    public static Item enderiumHoe;
+    public static Item enderitHoe;
 
     //Sword
     public static Item copperSword;
@@ -207,6 +223,8 @@ public class ItemList
     public static Item duratineSword;
     public static Item dark_ironSword;
     public static Item arenakSword;
+    public static Item enderiumSword;
+    public static Item enderitSword;
 
     //Helmet
     public static Item copperHelmet;
@@ -229,6 +247,8 @@ public class ItemList
     public static Item duratineHelmet;
     public static Item dark_ironHelmet;
     public static Item arenakHelmet;
+    public static Item enderiumHelmet;
+    public static Item enderitHelmet;
 
     //Chestplate
     public static Item copperChestplate;
@@ -251,6 +271,8 @@ public class ItemList
     public static Item duratineChestplate;
     public static Item dark_ironChestplate;
     public static Item arenakChestplate;
+    public static Item enderiumChestplate;
+    public static Item enderitChestplate;
 
     //Leggings
     public static Item copperLeggings;
@@ -273,6 +295,8 @@ public class ItemList
     public static Item duratineLeggings;
     public static Item dark_ironLeggings;
     public static Item arenakLeggings;
+    public static Item enderiumLeggings;
+    public static Item enderitLeggings;
 
     //Boots
     public static Item copperBoots;
@@ -295,6 +319,8 @@ public class ItemList
     public static Item duratineBoots;
     public static Item dark_ironBoots;
     public static Item arenakBoots;
+    public static Item enderiumBoots;
+    public static Item enderitBoots;
 
     public static Item copperhorsearmor;
     public static Item bronzehorsearmor;
@@ -316,4 +342,6 @@ public class ItemList
     public static Item duratinehorsearmor;
     public static Item dark_ironhorsearmor;
     public static Item arenakhorsearmor;
+    public static Item enderiumhorsearmor;
+    public static Item enderithorsearmor;
 }

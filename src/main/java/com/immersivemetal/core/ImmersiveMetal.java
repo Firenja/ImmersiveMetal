@@ -80,6 +80,8 @@ public class ImmersiveMetal
                     BlockList.duratineIngotBlock = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5, 6).lightValue(0).sound(SoundType.METAL)).setRegistryName(getResourceLocation("duratine_block")),
                     BlockList.dark_ironIngotBlock = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5, 6).lightValue(0).sound(SoundType.METAL)).setRegistryName(getResourceLocation("dark_iron_block")),
                     BlockList.arenakIngotBlock = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5, 6).lightValue(0).sound(SoundType.METAL)).setRegistryName(getResourceLocation("arenak_block")),
+                    BlockList.enderiumIngotBlock = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5, 6).lightValue(0).sound(SoundType.METAL)).setRegistryName(getResourceLocation("enderium_block")),
+                    BlockList.enderitIngotBlock = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5, 6).lightValue(0).sound(SoundType.METAL)).setRegistryName(getResourceLocation("enderit_block")),
 
                     //OreBlock
 
@@ -102,7 +104,9 @@ public class ImmersiveMetal
                     BlockList.bologniumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(5, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(10)).setRegistryName(getResourceLocation("bolognium_nether_ore")),
                     BlockList.duratineOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(10, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(10)).setRegistryName(getResourceLocation("duratine_ore")),
                     BlockList.dark_ironOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(15, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(11)).setRegistryName(getResourceLocation("dark_iron_ore")),
-                    BlockList.arenakOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(20, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(12)).setRegistryName(getResourceLocation("arenak_ore"))
+                    BlockList.arenakOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(20, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(12)).setRegistryName(getResourceLocation("arenak_ore")),
+                    BlockList.enderiumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(15, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(11)).setRegistryName(getResourceLocation("enderium_end_ore")),
+                    BlockList.enderitOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(20, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(12)).setRegistryName(getResourceLocation("enderit_end_ore"))
             );
         }
 
@@ -134,6 +138,8 @@ public class ImmersiveMetal
                             ItemList.duratineIngotBlock = new BlockItem(BlockList.duratineIngotBlock, new Item.Properties().group(immersive_metal)).setRegistryName(BlockList.duratineIngotBlock.getRegistryName()),
                             ItemList.dark_ironIngotBlock = new BlockItem(BlockList.dark_ironIngotBlock, new Item.Properties().group(immersive_metal)).setRegistryName(BlockList.dark_ironIngotBlock.getRegistryName()),
                             ItemList.arenakIngotBlock = new BlockItem(BlockList.arenakIngotBlock, new Item.Properties().group(immersive_metal)).setRegistryName(BlockList.arenakIngotBlock.getRegistryName()),
+                            ItemList.enderiumIngotBlock = new BlockItem(BlockList.enderiumIngotBlock, new Item.Properties().group(immersive_metal)).setRegistryName(BlockList.enderiumIngotBlock.getRegistryName()),
+                            ItemList.enderitIngotBlock = new BlockItem(BlockList.enderitIngotBlock, new Item.Properties().group(immersive_metal)).setRegistryName(BlockList.enderitIngotBlock.getRegistryName()),
 
                             //oreblockitem
                             ItemList.copperOre = new BlockItem(BlockList.copperOre, new Item.Properties().group(immersive_metal)).setRegistryName(BlockList.copperOre.getRegistryName()),
@@ -156,6 +162,8 @@ public class ImmersiveMetal
                             ItemList.duratineOre = new BlockItem(BlockList.duratineOre, new Item.Properties().group(immersive_metal)).setRegistryName(BlockList.duratineOre.getRegistryName()),
                             ItemList.dark_ironOre = new BlockItem(BlockList.dark_ironOre, new Item.Properties().group(immersive_metal)).setRegistryName(BlockList.dark_ironOre.getRegistryName()),
                             ItemList.arenakOre = new BlockItem(BlockList.arenakOre, new Item.Properties().group(immersive_metal)).setRegistryName(BlockList.arenakOre.getRegistryName()),
+                            ItemList.enderiumOre = new BlockItem(BlockList.enderiumOre, new Item.Properties().group(immersive_metal)).setRegistryName(BlockList.enderiumOre.getRegistryName()),
+                            ItemList.enderitOre = new BlockItem(BlockList.enderitOre, new Item.Properties().group(immersive_metal)).setRegistryName(BlockList.enderitOre.getRegistryName()),
 
                        //Ingots
                             ItemList.copperIngot = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("copper_ingot")),
@@ -180,6 +188,8 @@ public class ImmersiveMetal
                             ItemList.duratineIngot = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("duratine_ingot")),
                             ItemList.dark_ironIngot = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("dark_iron_ingot")),
                             ItemList.arenakIngot = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("arenak_ingot")),
+                            ItemList.enderiumIngot = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("enderium_ingot")),
+                            ItemList.enderitIngot = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("enderit_ingot")),
 
                             //Nugget
                             ItemList.copperNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("copper_nugget")),
@@ -204,6 +214,8 @@ public class ImmersiveMetal
                             ItemList.duratineNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("duratine_nugget")),
                             ItemList.dark_ironNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("dark_iron_nugget")),
                             ItemList.arenakNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("arenak_nugget")),
+                            ItemList.enderiumNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("enderium_nugget")),
+                            ItemList.enderitNugget = new Item(new Item.Properties().group(immersive_metal)).setRegistryName(getResourceLocation("enderit_nugget")),
 
                             //axe
                             ItemList.copperAxe = new AxeItem(ToolMaterialList.Copper, 1, 1, new Item.Properties().group(immersive_metal)).setRegistryName("copper_axe"),
@@ -226,6 +238,8 @@ public class ImmersiveMetal
                             ItemList.duratineAxe = new AxeItem(ToolMaterialList.Duratine, 1, 1, new Item.Properties().group(immersive_metal)).setRegistryName("duratine_axe"),
                             ItemList.dark_ironAxe = new AxeItem(ToolMaterialList.Dark_iron, 1, 1, new Item.Properties().group(immersive_metal)).setRegistryName("dark_iron_axe"),
                             ItemList.arenakAxe = new AxeItem(ToolMaterialList.Arenak, 1, 1, new Item.Properties().group(immersive_metal)).setRegistryName("arenak_axe"),
+                            ItemList.enderiumAxe = new AxeItem(ToolMaterialList.Enderium, 1, 1, new Item.Properties().group(immersive_metal)).setRegistryName("enderium_axe"),
+                            ItemList.enderitAxe = new AxeItem(ToolMaterialList.Enderit, 1, 1, new Item.Properties().group(immersive_metal)).setRegistryName("enderit_axe"),
 
                             //Shovel
                             ItemList.copperShovel = new ShovelItem(ToolMaterialList.Copper, -1, 1, new Item.Properties().group(immersive_metal)).setRegistryName("copper_shovel"),
@@ -248,6 +262,8 @@ public class ImmersiveMetal
                             ItemList.duratineShovel = new ShovelItem(ToolMaterialList.Duratine, -1, 1, new Item.Properties().group(immersive_metal)).setRegistryName("duratine_shovel"),
                             ItemList.dark_ironShovel = new ShovelItem(ToolMaterialList.Dark_iron, -1, 1, new Item.Properties().group(immersive_metal)).setRegistryName("dark_iron_shovel"),
                             ItemList.arenakShovel = new ShovelItem(ToolMaterialList.Arenak, -1, 1, new Item.Properties().group(immersive_metal)).setRegistryName("arenak_shovel"),
+                            ItemList.enderiumShovel = new ShovelItem(ToolMaterialList.Enderium, -1, 1, new Item.Properties().group(immersive_metal)).setRegistryName("enderium_shovel"),
+                            ItemList.enderitShovel = new ShovelItem(ToolMaterialList.Enderit, -1, 1, new Item.Properties().group(immersive_metal)).setRegistryName("enderit_shovel"),
 
                             //Pickaxe
                             ItemList.copperPickaxe = new PickaxeItem(ToolMaterialList.Copper, -1, 1, new Item.Properties().group(immersive_metal)).setRegistryName("copper_pickaxe"),
@@ -270,6 +286,8 @@ public class ImmersiveMetal
                             ItemList.duratinePickaxe = new PickaxeItem(ToolMaterialList.Duratine, -1, 1, new Item.Properties().group(immersive_metal)).setRegistryName("duratine_pickaxe"),
                             ItemList.dark_ironPickaxe = new PickaxeItem(ToolMaterialList.Dark_iron, -1, 1, new Item.Properties().group(immersive_metal)).setRegistryName("dark_iron_pickaxe"),
                             ItemList.arenakPickaxe = new PickaxeItem(ToolMaterialList.Arenak, -1, 1, new Item.Properties().group(immersive_metal)).setRegistryName("arenak_pickaxe"),
+                            ItemList.enderiumPickaxe = new PickaxeItem(ToolMaterialList.Enderium, -1, 1, new Item.Properties().group(immersive_metal)).setRegistryName("enderium_pickaxe"),
+                            ItemList.enderitPickaxe = new PickaxeItem(ToolMaterialList.Enderit, -1, 1, new Item.Properties().group(immersive_metal)).setRegistryName("enderit_pickaxe"),
 
                             //Hoe
                             ItemList.copperHoe = new HoeItem(ToolMaterialList.Copper, -1, new Item.Properties().group(immersive_metal)).setRegistryName("copper_hoe"),
@@ -292,6 +310,8 @@ public class ImmersiveMetal
                             ItemList.duratineHoe = new HoeItem(ToolMaterialList.Duratine, -1, new Item.Properties().group(immersive_metal)).setRegistryName("duratine_hoe"),
                             ItemList.dark_ironHoe = new HoeItem(ToolMaterialList.Dark_iron, -1, new Item.Properties().group(immersive_metal)).setRegistryName("dark_iron_hoe"),
                             ItemList.arenakHoe = new HoeItem(ToolMaterialList.Arenak, -1, new Item.Properties().group(immersive_metal)).setRegistryName("arenak_hoe"),
+                            ItemList.enderiumHoe = new HoeItem(ToolMaterialList.Enderium, -1, new Item.Properties().group(immersive_metal)).setRegistryName("enderium_hoe"),
+                            ItemList.enderitHoe = new HoeItem(ToolMaterialList.Enderit, -1, new Item.Properties().group(immersive_metal)).setRegistryName("enderit_hoe"),
 
                             //Sword
                             ItemList.copperSword = new SwordItem(ToolMaterialList.Copper, 4, 1.6F, new Item.Properties().group(immersive_metal)).setRegistryName("copper_sword"),
@@ -314,6 +334,8 @@ public class ImmersiveMetal
                             ItemList.duratineSword = new SwordItem(ToolMaterialList.Duratine, 9, 1.6F, new Item.Properties().group(immersive_metal)).setRegistryName("duratine_sword"),
                             ItemList.dark_ironSword = new SwordItem(ToolMaterialList.Dark_iron, 10, 1.6F, new Item.Properties().group(immersive_metal)).setRegistryName("dark_iron_sword"),
                             ItemList.arenakSword = new SwordItem(ToolMaterialList.Arenak, 12, 1.6F, new Item.Properties().group(immersive_metal)).setRegistryName("arenak_sword"),
+                            ItemList.enderiumSword = new SwordItem(ToolMaterialList.Enderium, 10, 1.6F, new Item.Properties().group(immersive_metal)).setRegistryName("enderium_sword"),
+                            ItemList.enderitSword = new SwordItem(ToolMaterialList.Enderit, 12, 1.6F, new Item.Properties().group(immersive_metal)).setRegistryName("enderit_sword"),
 
                             //Helmet
                             ItemList.copperHelmet = new ArmorItem(ArmorMaterialList.copper, EquipmentSlotType.HEAD, new Item.Properties().group(immersive_metal)).setRegistryName("copper_helmet"),
@@ -336,6 +358,8 @@ public class ImmersiveMetal
                             ItemList.duratineHelmet = new ArmorItem(ArmorMaterialList.duratine, EquipmentSlotType.HEAD, new Item.Properties().group(immersive_metal)).setRegistryName("duratine_helmet"),
                             ItemList.dark_ironHelmet = new ArmorItem(ArmorMaterialList.dark_iron, EquipmentSlotType.HEAD, new Item.Properties().group(immersive_metal)).setRegistryName("dark_iron_helmet"),
                             ItemList.arenakHelmet = new ArmorItem(ArmorMaterialList.arenak, EquipmentSlotType.HEAD, new Item.Properties().group(immersive_metal)).setRegistryName("arenak_helmet"),
+                            ItemList.enderiumHelmet = new ArmorItem(ArmorMaterialList.enderium, EquipmentSlotType.HEAD, new Item.Properties().group(immersive_metal)).setRegistryName("enderium_helmet"),
+                            ItemList.enderitHelmet = new ArmorItem(ArmorMaterialList.enderit, EquipmentSlotType.HEAD, new Item.Properties().group(immersive_metal)).setRegistryName("enderit_helmet"),
 
                             //Chestplate
                             ItemList.copperChestplate = new ArmorItem(ArmorMaterialList.copper, EquipmentSlotType.CHEST, new Item.Properties().group(immersive_metal)).setRegistryName("copper_chestplate"),
@@ -358,6 +382,9 @@ public class ImmersiveMetal
                             ItemList.duratineChestplate = new ArmorItem(ArmorMaterialList.duratine, EquipmentSlotType.CHEST, new Item.Properties().group(immersive_metal)).setRegistryName("duratine_chestplate"),
                             ItemList.dark_ironChestplate = new ArmorItem(ArmorMaterialList.dark_iron, EquipmentSlotType.CHEST, new Item.Properties().group(immersive_metal)).setRegistryName("dark_iron_chestplate"),
                             ItemList.arenakChestplate = new ArmorItem(ArmorMaterialList.arenak, EquipmentSlotType.CHEST, new Item.Properties().group(immersive_metal)).setRegistryName("arenak_chestplate"),
+                            ItemList.enderiumChestplate = new ArmorItem(ArmorMaterialList.enderium, EquipmentSlotType.CHEST, new Item.Properties().group(immersive_metal)).setRegistryName("enderium_chestplate"),
+                            ItemList.enderitChestplate = new ArmorItem(ArmorMaterialList.enderit, EquipmentSlotType.CHEST, new Item.Properties().group(immersive_metal)).setRegistryName("enderit_chestplate"),
+
 
                             //Leggings
                             ItemList.copperLeggings = new ArmorItem(ArmorMaterialList.copper, EquipmentSlotType.LEGS, new Item.Properties().group(immersive_metal)).setRegistryName("copper_leggings"),
@@ -380,6 +407,8 @@ public class ImmersiveMetal
                             ItemList.duratineLeggings = new ArmorItem(ArmorMaterialList.duratine, EquipmentSlotType.LEGS, new Item.Properties().group(immersive_metal)).setRegistryName("duratine_leggings"),
                             ItemList.dark_ironLeggings = new ArmorItem(ArmorMaterialList.dark_iron, EquipmentSlotType.LEGS, new Item.Properties().group(immersive_metal)).setRegistryName("dark_iron_leggings"),
                             ItemList.arenakLeggings = new ArmorItem(ArmorMaterialList.arenak, EquipmentSlotType.LEGS, new Item.Properties().group(immersive_metal)).setRegistryName("arenak_leggings"),
+                            ItemList.enderiumLeggings = new ArmorItem(ArmorMaterialList.enderium, EquipmentSlotType.LEGS, new Item.Properties().group(immersive_metal)).setRegistryName("enderium_leggings"),
+                            ItemList.enderitLeggings = new ArmorItem(ArmorMaterialList.enderit, EquipmentSlotType.LEGS, new Item.Properties().group(immersive_metal)).setRegistryName("enderit_leggings"),
 
                             //boots
                             ItemList.copperBoots = new ArmorItem(ArmorMaterialList.copper, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("copper_boots"),
@@ -402,6 +431,8 @@ public class ImmersiveMetal
                             ItemList.duratineBoots = new ArmorItem(ArmorMaterialList.duratine, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("duratine_boots"),
                             ItemList.dark_ironBoots = new ArmorItem(ArmorMaterialList.dark_iron, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("dark_iron_boots"),
                             ItemList.arenakBoots = new ArmorItem(ArmorMaterialList.arenak, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("arenak_boots"),
+                            ItemList.enderiumBoots = new ArmorItem(ArmorMaterialList.enderium, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("enderium_boots"),
+                            ItemList.enderitBoots = new ArmorItem(ArmorMaterialList.enderit, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("enderit_boots"),
 
                             //horse
                             ItemList.copperhorsearmor = new HorseArmorItem(5,getResourceLocation("textures/entity/horse/armor/horse_armor_copper.png"),new Item.Properties().group(immersive_metal)).setRegistryName("copper_horse_armor"),
@@ -423,7 +454,9 @@ public class ImmersiveMetal
                             ItemList.bologniumhorsearmor = new HorseArmorItem(13,getResourceLocation("textures/entity/horse/armor/horse_armor_bolognium.png"),new Item.Properties().group(immersive_metal)).setRegistryName("bolognium_horse_armor"),
                             ItemList.duratinehorsearmor = new HorseArmorItem(14,getResourceLocation("textures/entity/horse/armor/horse_armor_duratine.png"),new Item.Properties().group(immersive_metal)).setRegistryName("duratine_horse_armor"),
                             ItemList.dark_ironhorsearmor = new HorseArmorItem(14,getResourceLocation("textures/entity/horse/armor/horse_armor_dark_iron.png"),new Item.Properties().group(immersive_metal)).setRegistryName("dark_iron_horse_armor"),
-                            ItemList.arenakhorsearmor = new HorseArmorItem(15,getResourceLocation("textures/entity/horse/armor/horse_armor_arenak.png"),new Item.Properties().group(immersive_metal)).setRegistryName("arenak_horse_armor")
+                            ItemList.arenakhorsearmor = new HorseArmorItem(15,getResourceLocation("textures/entity/horse/armor/horse_armor_arenak.png"),new Item.Properties().group(immersive_metal)).setRegistryName("arenak_horse_armor"),
+                            ItemList.enderiumhorsearmor = new HorseArmorItem(14,getResourceLocation("textures/entity/horse/armor/horse_armor_enderium.png"),new Item.Properties().group(immersive_metal)).setRegistryName("enderium_horse_armor"),
+                            ItemList.enderithorsearmor = new HorseArmorItem(15,getResourceLocation("textures/entity/horse/armor/horse_armor_enderit.png"),new Item.Properties().group(immersive_metal)).setRegistryName("enderit_horse_armor")
 
                     );
 
