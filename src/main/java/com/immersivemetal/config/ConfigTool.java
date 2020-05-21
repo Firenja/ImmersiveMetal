@@ -1,33 +1,27 @@
 package com.immersivemetal.config;
 
-import com.immersivemetal.list.ItemList;
 import net.minecraftforge.common.ForgeConfigSpec;
 
 public class ConfigTool
 {
-
-
     //copper
     public static ForgeConfigSpec.IntValue copperattackDamage;
     public static ForgeConfigSpec.IntValue copperefficiencyValue;
     public static ForgeConfigSpec.IntValue copperdurability;
     public static ForgeConfigSpec.IntValue copperharvestLevel;
     public static ForgeConfigSpec.IntValue copperenchantability;
-
     //bronze
     public static ForgeConfigSpec.IntValue bronzeattackDamage;
     public static ForgeConfigSpec.IntValue bronzeefficiencyValue;
     public static ForgeConfigSpec.IntValue bronzedurability;
     public static ForgeConfigSpec.IntValue bronzeharvestLevel;
     public static ForgeConfigSpec.IntValue bronzeenchantability;
-
     //brass
     public static ForgeConfigSpec.IntValue brassattackDamage;
     public static ForgeConfigSpec.IntValue brassefficiencyValue;
     public static ForgeConfigSpec.IntValue brassdurability;
     public static ForgeConfigSpec.IntValue brassharvestLevel;
     public static ForgeConfigSpec.IntValue brassenchantability;
-
     //silver
     public static ForgeConfigSpec.IntValue silverattackDamage;
     public static ForgeConfigSpec.IntValue silverefficiencyValue;
@@ -142,7 +136,6 @@ public class ConfigTool
     public static ForgeConfigSpec.IntValue enderitdurability;
     public static ForgeConfigSpec.IntValue enderitharvestLevel;
     public static ForgeConfigSpec.IntValue enderitenchantability;
-
 
     public static void init(ForgeConfigSpec.Builder server)
     {

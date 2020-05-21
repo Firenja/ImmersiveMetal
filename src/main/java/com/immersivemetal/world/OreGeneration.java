@@ -2,8 +2,6 @@ package com.immersivemetal.world;
 
 import com.immersivemetal.config.ConfigOre;
 import com.immersivemetal.list.BlockList;
-import com.sun.org.apache.xpath.internal.operations.Bool;
-import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.pattern.BlockMatcher;
 import net.minecraft.world.biome.Biome;
@@ -13,7 +11,6 @@ import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 import net.minecraft.world.gen.placement.CountRangeConfig;
 import net.minecraft.world.gen.placement.Placement;
-import net.minecraftforge.common.Tags;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class OreGeneration {

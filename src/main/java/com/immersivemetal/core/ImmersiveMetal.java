@@ -1,8 +1,8 @@
 package com.immersivemetal.core;
 
-import com.google.gson.JsonObject;
 import com.immersivemetal.config.ConfigArmor;
 import com.immersivemetal.config.ConfigManager;
+import com.immersivemetal.config.ConfigOre;
 import com.immersivemetal.list.ArmorMaterialList;
 import com.immersivemetal.list.BlockList;
 import com.immersivemetal.list.ItemList;
@@ -14,9 +14,6 @@ import net.minecraft.block.material.Material;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.item.crafting.IRecipe;
-import net.minecraft.item.crafting.RecipeBook;
-import net.minecraft.item.crafting.RecipeManager;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.ToolType;
@@ -28,12 +25,8 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.loading.FMLPaths;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.ForgeRegistry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import sun.security.krb5.Config;
 
 @Mod("immersivemetal")
 public class ImmersiveMetal
@@ -58,8 +51,7 @@ public class ImmersiveMetal
         OreGeneration.setupOreGeneration();
     }
 
-    private void clientRegistries(final FMLClientSetupEvent event)
-    {
+    private void clientRegistries(final FMLClientSetupEvent event) {
     }
 
     @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -98,37 +90,34 @@ public class ImmersiveMetal
                     BlockList.enderitIngotBlock = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5, 6).lightValue(0).sound(SoundType.METAL)).setRegistryName(getResourceLocation("enderit_block")),
 
                     //OreBlock
-
-                    BlockList.copperOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName(getResourceLocation("copper_ore")),
-                    BlockList.tinOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName(getResourceLocation("tin_ore")),
-                    BlockList.zincOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName(getResourceLocation("zinc_ore")),
-                    BlockList.silverOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName(getResourceLocation("silver_ore")),
-                    BlockList.platinumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName(getResourceLocation("platinum_ore")),
-                    BlockList.promethiumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(3)).setRegistryName(getResourceLocation("promethium_ore")),
-                    BlockList.hard_ironOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(4)).setRegistryName(getResourceLocation("hard_iron_ore")),
-                    BlockList.mithrilOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(5)).setRegistryName(getResourceLocation("mithril_ore")),
-                    BlockList.orichalcumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(4, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(6)).setRegistryName(getResourceLocation("orichalcum_ore")),
-                    BlockList.adamantOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(4, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(7)).setRegistryName(getResourceLocation("adamant_ore")),
-                    BlockList.glowing_ironOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(5, 10).lightValue(3).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(7)).setRegistryName(getResourceLocation("glowing_iron_nether_ore")),
-                    BlockList.uridiumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(5, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(7)).setRegistryName(getResourceLocation("uridium_nether_ore")),
-                    BlockList.tritaniumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(5, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(8)).setRegistryName(getResourceLocation("tritanium_nether_ore")),
-                    BlockList.quadiumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(5, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(8)).setRegistryName(getResourceLocation("quadium_nether_ore")),
-                    BlockList.etheriumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(5, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(9)).setRegistryName(getResourceLocation("etherium_nether_ore")),
-                    BlockList.byzaniumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(5, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(9)).setRegistryName(getResourceLocation("byzanium_nether_ore")),
-                    BlockList.bologniumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(5, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(10)).setRegistryName(getResourceLocation("bolognium_nether_ore")),
-                    BlockList.duratineOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(10, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(10)).setRegistryName(getResourceLocation("duratine_ore")),
-                    BlockList.dark_ironOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(15, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(11)).setRegistryName(getResourceLocation("dark_iron_ore")),
-                    BlockList.arenakOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(20, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(12)).setRegistryName(getResourceLocation("arenak_ore")),
-                    BlockList.enderiumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(15, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(11)).setRegistryName(getResourceLocation("enderium_end_ore")),
-                    BlockList.enderitOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(20, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(12)).setRegistryName(getResourceLocation("enderit_end_ore"))
+                    BlockList.copperOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(ConfigOre.copperharvestlevel.get())).setRegistryName(getResourceLocation("copper_ore")),
+                    BlockList.tinOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(ConfigOre.tinharvestlevel.get())).setRegistryName(getResourceLocation("tin_ore")),
+                    BlockList.zincOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(ConfigOre.zincharvestlevel.get())).setRegistryName(getResourceLocation("zinc_ore")),
+                    BlockList.silverOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(ConfigOre.silverharvestlevel.get())).setRegistryName(getResourceLocation("silver_ore")),
+                    BlockList.platinumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(ConfigOre.platinumharvestlevel.get())).setRegistryName(getResourceLocation("platinum_ore")),
+                    BlockList.promethiumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(ConfigOre.promethiumharvestlevel.get())).setRegistryName(getResourceLocation("promethium_ore")),
+                    BlockList.hard_ironOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(ConfigOre.hardironharvestlevel.get())).setRegistryName(getResourceLocation("hard_iron_ore")),
+                    BlockList.mithrilOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(ConfigOre.mithrilharvestlevel.get())).setRegistryName(getResourceLocation("mithril_ore")),
+                    BlockList.orichalcumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(4, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(ConfigOre.orichalcumharvestlevel.get())).setRegistryName(getResourceLocation("orichalcum_ore")),
+                    BlockList.adamantOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(4, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(ConfigOre.adamantharvestlevel.get())).setRegistryName(getResourceLocation("adamant_ore")),
+                    BlockList.glowing_ironOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(5, 10).lightValue(3).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(ConfigOre.glowingironharvestlevel.get())).setRegistryName(getResourceLocation("glowing_iron_nether_ore")),
+                    BlockList.uridiumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(5, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(ConfigOre.uridiumharvestlevel.get())).setRegistryName(getResourceLocation("uridium_nether_ore")),
+                    BlockList.tritaniumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(5, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(ConfigOre.tritaniumharvestlevel.get())).setRegistryName(getResourceLocation("tritanium_nether_ore")),
+                    BlockList.quadiumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(5, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(ConfigOre.quadiumharvestlevel.get())).setRegistryName(getResourceLocation("quadium_nether_ore")),
+                    BlockList.etheriumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(5, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(ConfigOre.etheriumharvestlevel.get())).setRegistryName(getResourceLocation("etherium_nether_ore")),
+                    BlockList.byzaniumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(5, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(ConfigOre.byzaniumharvestlevel.get())).setRegistryName(getResourceLocation("byzanium_nether_ore")),
+                    BlockList.bologniumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(5, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(ConfigOre.bologniumharvestlevel.get())).setRegistryName(getResourceLocation("bolognium_nether_ore")),
+                    BlockList.duratineOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(10, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(ConfigOre.duratineharvestlevel.get())).setRegistryName(getResourceLocation("duratine_ore")),
+                    BlockList.dark_ironOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(15, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(ConfigOre.darkironharvestlevel.get())).setRegistryName(getResourceLocation("dark_iron_ore")),
+                    BlockList.arenakOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(20, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(ConfigOre.arenakharvestlevel.get())).setRegistryName(getResourceLocation("arenak_ore")),
+                    BlockList.enderiumOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(15, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(ConfigOre.enderiumharvestlevel.get())).setRegistryName(getResourceLocation("enderium_end_ore")),
+                    BlockList.enderitOre = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(20, 10).lightValue(0).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(ConfigOre.enderitharvestlevel.get())).setRegistryName(getResourceLocation("enderit_end_ore"))
             );
         }
 
         @SubscribeEvent
         public static void regItems(final RegistryEvent.Register<Item> event)
         {
-
-
                 event.getRegistry().registerAll(
                         ItemList.copperChestplate = new ArmorItem(ArmorMaterialList.copper, EquipmentSlotType.CHEST, new Item.Properties().group(immersive_metal)).setRegistryName("copper_chestplate"),
                         ItemList.copperHelmet = new ArmorItem(ArmorMaterialList.copper, EquipmentSlotType.HEAD, new Item.Properties().group(immersive_metal)).setRegistryName("copper_helmet"),
@@ -511,28 +500,28 @@ public class ImmersiveMetal
                             ItemList.enderitSword = new SwordItem(ToolMaterialList.Enderit, 12, 1.6F, new Item.Properties().group(immersive_metal)).setRegistryName("enderit_sword"),
 
                             //horse
-                            ItemList.copperhorsearmor = new HorseArmorItem(5,getResourceLocation("textures/entity/horse/armor/horse_armor_copper.png"),new Item.Properties().group(immersive_metal)).setRegistryName("copper_horse_armor"),
-                            ItemList.bronzehorsearmor = new HorseArmorItem(7,getResourceLocation("textures/entity/horse/armor/horse_armor_bronze.png"),new Item.Properties().group(immersive_metal)).setRegistryName("bronze_horse_armor"),
-                            ItemList.brasshorsearmor = new HorseArmorItem(7,getResourceLocation("textures/entity/horse/armor/horse_armor_brass.png"),new Item.Properties().group(immersive_metal)).setRegistryName("brass_horse_armor"),
-                            ItemList.silverhorsearmor = new HorseArmorItem(8,getResourceLocation("textures/entity/horse/armor/horse_armor_silver.png"),new Item.Properties().group(immersive_metal)).setRegistryName("silver_horse_armor"),
-                            ItemList.platinumhorsearmor = new HorseArmorItem(11,getResourceLocation("textures/entity/horse/armor/horse_armor_platinum.png"),new Item.Properties().group(immersive_metal)).setRegistryName("platinum_horse_armor"),
-                            ItemList.promethiumhorsearmor = new HorseArmorItem(11,getResourceLocation("textures/entity/horse/armor/horse_armor_promethium.png"),new Item.Properties().group(immersive_metal)).setRegistryName("promethium_horse_armor"),
-                            ItemList.hard_ironhorsearmor = new HorseArmorItem(11,getResourceLocation("textures/entity/horse/armor/horse_armor_hard_iron.png"),new Item.Properties().group(immersive_metal)).setRegistryName("hard_iron_horse_armor"),
-                            ItemList.mithrilhorsearmor = new HorseArmorItem(11,getResourceLocation("textures/entity/horse/armor/horse_armor_mithril.png"),new Item.Properties().group(immersive_metal)).setRegistryName("mithril_horse_armor"),
-                            ItemList.orichalcumhorsearmor = new HorseArmorItem(11,getResourceLocation("textures/entity/horse/armor/horse_armor_orichalcum.png"),new Item.Properties().group(immersive_metal)).setRegistryName("orichalcum_horse_armor"),
-                            ItemList.adamanthorsearmor = new HorseArmorItem(12,getResourceLocation("textures/entity/horse/armor/horse_armor_adamant.png"),new Item.Properties().group(immersive_metal)).setRegistryName("adamant_horse_armor"),
-                            ItemList.glowing_ironhorsearmor = new HorseArmorItem(12,getResourceLocation("textures/entity/horse/armor/horse_armor_glowing_iron.png"),new Item.Properties().group(immersive_metal)).setRegistryName("glowing_iron_horse_armor"),
-                            ItemList.uridiumhorsearmor = new HorseArmorItem(12,getResourceLocation("textures/entity/horse/armor/horse_armor_uridium.png"),new Item.Properties().group(immersive_metal)).setRegistryName("uridium_horse_armor"),
-                            ItemList.tritaniumhorsearmor = new HorseArmorItem(12,getResourceLocation("textures/entity/horse/armor/horse_armor_tritanium.png"),new Item.Properties().group(immersive_metal)).setRegistryName("tritanium_horse_armor"),
-                            ItemList.quadiumhorsearmor = new HorseArmorItem(12,getResourceLocation("textures/entity/horse/armor/horse_armor_quadium.png"),new Item.Properties().group(immersive_metal)).setRegistryName("quadium_horse_armor"),
-                            ItemList.etheriumhorsearmor = new HorseArmorItem(13,getResourceLocation("textures/entity/horse/armor/horse_armor_etherium.png"),new Item.Properties().group(immersive_metal)).setRegistryName("etherium_horse_armor"),
-                            ItemList.byzaniumhorsearmor = new HorseArmorItem(13,getResourceLocation("textures/entity/horse/armor/horse_armor_byzanium.png"),new Item.Properties().group(immersive_metal)).setRegistryName("byzanium_horse_armor"),
-                            ItemList.bologniumhorsearmor = new HorseArmorItem(13,getResourceLocation("textures/entity/horse/armor/horse_armor_bolognium.png"),new Item.Properties().group(immersive_metal)).setRegistryName("bolognium_horse_armor"),
-                            ItemList.duratinehorsearmor = new HorseArmorItem(14,getResourceLocation("textures/entity/horse/armor/horse_armor_duratine.png"),new Item.Properties().group(immersive_metal)).setRegistryName("duratine_horse_armor"),
-                            ItemList.dark_ironhorsearmor = new HorseArmorItem(14,getResourceLocation("textures/entity/horse/armor/horse_armor_dark_iron.png"),new Item.Properties().group(immersive_metal)).setRegistryName("dark_iron_horse_armor"),
-                            ItemList.arenakhorsearmor = new HorseArmorItem(15,getResourceLocation("textures/entity/horse/armor/horse_armor_arenak.png"),new Item.Properties().group(immersive_metal)).setRegistryName("arenak_horse_armor"),
-                            ItemList.enderiumhorsearmor = new HorseArmorItem(14,getResourceLocation("textures/entity/horse/armor/horse_armor_enderium.png"),new Item.Properties().group(immersive_metal)).setRegistryName("enderium_horse_armor"),
-                            ItemList.enderithorsearmor = new HorseArmorItem(15,getResourceLocation("textures/entity/horse/armor/horse_armor_enderit.png"),new Item.Properties().group(immersive_metal)).setRegistryName("enderit_horse_armor")
+                            ItemList.copperhorsearmor = new HorseArmorItem(ConfigArmor.copperdefhorsearmor.get(),getResourceLocation("textures/entity/horse/armor/horse_armor_copper.png"),new Item.Properties().group(immersive_metal)).setRegistryName("copper_horse_armor"),
+                            ItemList.bronzehorsearmor = new HorseArmorItem(ConfigArmor.bronzedefhorsearmor.get(),getResourceLocation("textures/entity/horse/armor/horse_armor_bronze.png"),new Item.Properties().group(immersive_metal)).setRegistryName("bronze_horse_armor"),
+                            ItemList.brasshorsearmor = new HorseArmorItem(ConfigArmor.brassdefhorsearmor.get(),getResourceLocation("textures/entity/horse/armor/horse_armor_brass.png"),new Item.Properties().group(immersive_metal)).setRegistryName("brass_horse_armor"),
+                            ItemList.silverhorsearmor = new HorseArmorItem(ConfigArmor.silverdefhorsearmor.get(),getResourceLocation("textures/entity/horse/armor/horse_armor_silver.png"),new Item.Properties().group(immersive_metal)).setRegistryName("silver_horse_armor"),
+                            ItemList.platinumhorsearmor = new HorseArmorItem(ConfigArmor.platinumdefhorsearmor.get(),getResourceLocation("textures/entity/horse/armor/horse_armor_platinum.png"),new Item.Properties().group(immersive_metal)).setRegistryName("platinum_horse_armor"),
+                            ItemList.promethiumhorsearmor = new HorseArmorItem(ConfigArmor.promethiumdefhorsearmor.get(),getResourceLocation("textures/entity/horse/armor/horse_armor_promethium.png"),new Item.Properties().group(immersive_metal)).setRegistryName("promethium_horse_armor"),
+                            ItemList.hard_ironhorsearmor = new HorseArmorItem(ConfigArmor.hardirondefhorsearmor.get(),getResourceLocation("textures/entity/horse/armor/horse_armor_hard_iron.png"),new Item.Properties().group(immersive_metal)).setRegistryName("hard_iron_horse_armor"),
+                            ItemList.mithrilhorsearmor = new HorseArmorItem(ConfigArmor.mithrildefhorsearmor.get(),getResourceLocation("textures/entity/horse/armor/horse_armor_mithril.png"),new Item.Properties().group(immersive_metal)).setRegistryName("mithril_horse_armor"),
+                            ItemList.orichalcumhorsearmor = new HorseArmorItem(ConfigArmor.orichalcumdefhorsearmor.get(),getResourceLocation("textures/entity/horse/armor/horse_armor_orichalcum.png"),new Item.Properties().group(immersive_metal)).setRegistryName("orichalcum_horse_armor"),
+                            ItemList.adamanthorsearmor = new HorseArmorItem(ConfigArmor.adamantdefhorsearmor.get(),getResourceLocation("textures/entity/horse/armor/horse_armor_adamant.png"),new Item.Properties().group(immersive_metal)).setRegistryName("adamant_horse_armor"),
+                            ItemList.glowing_ironhorsearmor = new HorseArmorItem(ConfigArmor.glowingirondefhorsearmor.get(),getResourceLocation("textures/entity/horse/armor/horse_armor_glowing_iron.png"),new Item.Properties().group(immersive_metal)).setRegistryName("glowing_iron_horse_armor"),
+                            ItemList.uridiumhorsearmor = new HorseArmorItem(ConfigArmor.uridiumdefhorsearmor.get(),getResourceLocation("textures/entity/horse/armor/horse_armor_uridium.png"),new Item.Properties().group(immersive_metal)).setRegistryName("uridium_horse_armor"),
+                            ItemList.tritaniumhorsearmor = new HorseArmorItem(ConfigArmor.tritaniumdefhorsearmor.get(),getResourceLocation("textures/entity/horse/armor/horse_armor_tritanium.png"),new Item.Properties().group(immersive_metal)).setRegistryName("tritanium_horse_armor"),
+                            ItemList.quadiumhorsearmor = new HorseArmorItem(ConfigArmor.quadiumdefhorsearmor.get(),getResourceLocation("textures/entity/horse/armor/horse_armor_quadium.png"),new Item.Properties().group(immersive_metal)).setRegistryName("quadium_horse_armor"),
+                            ItemList.etheriumhorsearmor = new HorseArmorItem(ConfigArmor.etheriumdefhorsearmor.get(),getResourceLocation("textures/entity/horse/armor/horse_armor_etherium.png"),new Item.Properties().group(immersive_metal)).setRegistryName("etherium_horse_armor"),
+                            ItemList.byzaniumhorsearmor = new HorseArmorItem(ConfigArmor.byzaniumdefhorsearmor.get(),getResourceLocation("textures/entity/horse/armor/horse_armor_byzanium.png"),new Item.Properties().group(immersive_metal)).setRegistryName("byzanium_horse_armor"),
+                            ItemList.bologniumhorsearmor = new HorseArmorItem(ConfigArmor.bologniumdefhorsearmor.get(),getResourceLocation("textures/entity/horse/armor/horse_armor_bolognium.png"),new Item.Properties().group(immersive_metal)).setRegistryName("bolognium_horse_armor"),
+                            ItemList.duratinehorsearmor = new HorseArmorItem(ConfigArmor.duratinedefhorsearmor.get(),getResourceLocation("textures/entity/horse/armor/horse_armor_duratine.png"),new Item.Properties().group(immersive_metal)).setRegistryName("duratine_horse_armor"),
+                            ItemList.dark_ironhorsearmor = new HorseArmorItem(ConfigArmor.darkirondefhorsearmor.get(),getResourceLocation("textures/entity/horse/armor/horse_armor_dark_iron.png"),new Item.Properties().group(immersive_metal)).setRegistryName("dark_iron_horse_armor"),
+                            ItemList.arenakhorsearmor = new HorseArmorItem(ConfigArmor.arenakdefhorsearmor.get(),getResourceLocation("textures/entity/horse/armor/horse_armor_arenak.png"),new Item.Properties().group(immersive_metal)).setRegistryName("arenak_horse_armor"),
+                            ItemList.enderiumhorsearmor = new HorseArmorItem(ConfigArmor.enderiumdefhorsearmor.get(),getResourceLocation("textures/entity/horse/armor/horse_armor_enderium.png"),new Item.Properties().group(immersive_metal)).setRegistryName("enderium_horse_armor"),
+                            ItemList.enderithorsearmor = new HorseArmorItem(ConfigArmor.enderitdefhorsearmor.get(),getResourceLocation("textures/entity/horse/armor/horse_armor_enderit.png"),new Item.Properties().group(immersive_metal)).setRegistryName("enderit_horse_armor")
 
                     );
 

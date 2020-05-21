@@ -8,7 +8,6 @@ import net.minecraft.item.crafting.Ingredient;
 
 public enum ToolMaterialList implements IItemTier
 {
-
     Copper(ConfigTool.copperattackDamage.get(),ConfigTool.copperefficiencyValue.get(),ConfigTool.copperdurability.get(),ConfigTool.copperharvestLevel.get(),ConfigTool.copperenchantability.get(),ItemList.copperIngot),
     Bronze(ConfigTool.bronzeattackDamage.get(),ConfigTool.bronzeefficiencyValue.get(),ConfigTool.bronzedurability.get(),ConfigTool.bronzeharvestLevel.get(),ConfigTool.bronzeenchantability.get(),ItemList.bronzeIngot),
     Brass(ConfigTool.brassattackDamage.get(),ConfigTool.brassefficiencyValue.get(),ConfigTool.brassdurability.get(),ConfigTool.brassharvestLevel.get(),ConfigTool.brassenchantability.get(),ItemList.brassIngot),
