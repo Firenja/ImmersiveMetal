@@ -1,5 +1,6 @@
 package com.immersivemetal.list;
 
+
 import com.immersivemetal.config.ConfigArmor;
 import com.immersivemetal.core.ImmersiveMetal;
 import net.minecraft.inventory.EquipmentSlotType;
