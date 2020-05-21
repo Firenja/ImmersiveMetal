@@ -1,31 +1,35 @@
 package com.immersivemetal.list;
 
+import com.immersivemetal.config.ConfigTool;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item;
 import net.minecraft.item.crafting.Ingredient;
 
+
 public enum ToolMaterialList implements IItemTier
 {
-    Copper(4,10,200,2,5,ItemList.copperIngot),
-    Bronze(4,10,260,2,5,ItemList.bronzeIngot),
-    Brass(4,10,280,2,10,ItemList.brassIngot),
-    Silver(2,10,50,0,50,ItemList.silverIngot),
-    Platinum(4,10,250,2,25,ItemList.platinumIngot),
-    Promethium(6,10,1600,5,25,ItemList.platinumIngot),
-    Hard_iron(6,10,500,5,25,ItemList.hard_ironIngot),
-    Mithril(6,10,1200,6,25,ItemList.mithrilIngot),
-    Orichalcum(6,10,1000,7,25,ItemList.orichalcumIngot),
-    Adamant(6,10,1400,7,25,ItemList.adamantIngot),
-    Glowing_iron(7,10,900,7,35,ItemList.glowing_ironIngot),
-    Uridium(6,10,1100,8,35,ItemList.uridiumIngot),
-    Tritanium(8,10,1300,9,35,ItemList.tritaniumIngot),
-    Quadium(8,10,1600,9,35,ItemList.quadiumIngot),
-    Etherium(8,10,1900,10,35,ItemList.etheriumIngot),
-    Byzanium(9,10,2000,10,35,ItemList.byzaniumIngot),
-    Bolognium(9,10,2300,11,35,ItemList.bologniumIngot),
-    Duratine(9,10,2500,11,40,ItemList.duratineIngot),
-    Dark_iron(10,10,2700,12,45,ItemList.dark_ironIngot),
-    Arenak(12,10,3000,13,50,ItemList.arenakIngot);
+    Copper(ConfigTool.copperattackDamage.get(),ConfigTool.copperefficiencyValue.get(),ConfigTool.copperdurability.get(),ConfigTool.copperharvestLevel.get(),ConfigTool.copperenchantability.get(),ItemList.copperIngot),
+    Bronze(ConfigTool.bronzeattackDamage.get(),ConfigTool.bronzeefficiencyValue.get(),ConfigTool.bronzedurability.get(),ConfigTool.bronzeharvestLevel.get(),ConfigTool.bronzeenchantability.get(),ItemList.bronzeIngot),
+    Brass(ConfigTool.brassattackDamage.get(),ConfigTool.brassefficiencyValue.get(),ConfigTool.brassdurability.get(),ConfigTool.brassharvestLevel.get(),ConfigTool.brassenchantability.get(),ItemList.brassIngot),
+    Silver(ConfigTool.silverattackDamage.get(),ConfigTool.silverefficiencyValue.get(),ConfigTool.silverdurability.get(),ConfigTool.silverharvestLevel.get(),ConfigTool.silverenchantability.get(),ItemList.silverIngot),
+    Platinum(ConfigTool.platinumattackDamage.get(),ConfigTool.platinumefficiencyValue.get(),ConfigTool.platinumdurability.get(),ConfigTool.platinumharvestLevel.get(),ConfigTool.platinumenchantability.get(),ItemList.platinumIngot),
+    Promethium(ConfigTool.promethiumattackDamage.get(),ConfigTool.promethiumefficiencyValue.get(),ConfigTool.promethiumdurability.get(),ConfigTool.promethiumharvestLevel.get(),ConfigTool.promethiumenchantability.get(),ItemList.promethiumIngot),
+    Hard_iron(ConfigTool.hardironattackDamage.get(),ConfigTool.hardironefficiencyValue.get(),ConfigTool.hardirondurability.get(),ConfigTool.hardironharvestLevel.get(),ConfigTool.hardironenchantability.get(),ItemList.hard_ironIngot),
+    Mithril(ConfigTool.mithrilattackDamage.get(),ConfigTool.mithrilefficiencyValue.get(),ConfigTool.mithrildurability.get(),ConfigTool.mithrilharvestLevel.get(),ConfigTool.mithrilenchantability.get(),ItemList.mithrilIngot),
+    Orichalcum(ConfigTool.orichalcumattackDamage.get(),ConfigTool.orichalcumefficiencyValue.get(),ConfigTool.orichalcumdurability.get(),ConfigTool.orichalcumharvestLevel.get(),ConfigTool.orichalcumenchantability.get(),ItemList.orichalcumIngot),
+    Adamant(ConfigTool.adamantattackDamage.get(),ConfigTool.adamantefficiencyValue.get(),ConfigTool.adamantdurability.get(),ConfigTool.adamantharvestLevel.get(),ConfigTool.adamantenchantability.get(),ItemList.adamantIngot),
+    Glowing_iron(ConfigTool.glowingironattackDamage.get(),ConfigTool.glowingironefficiencyValue.get(),ConfigTool.glowingirondurability.get(),ConfigTool.glowingironharvestLevel.get(),ConfigTool.glowingironenchantability.get(),ItemList.glowing_ironIngot),
+    Uridium(ConfigTool.uridiumattackDamage.get(),ConfigTool.uridiumefficiencyValue.get(),ConfigTool.uridiumdurability.get(),ConfigTool.uridiumharvestLevel.get(),ConfigTool.uridiumenchantability.get(),ItemList.uridiumIngot),
+    Tritanium(ConfigTool.tritaniumattackDamage.get(),ConfigTool.tritaniumefficiencyValue.get(),ConfigTool.tritaniumdurability.get(),ConfigTool.tritaniumharvestLevel.get(),ConfigTool.tritaniumenchantability.get(),ItemList.tritaniumIngot),
+    Quadium(ConfigTool.quadiumattackDamage.get(),ConfigTool.quadiumefficiencyValue.get(),ConfigTool.quadiumdurability.get(),ConfigTool.quadiumharvestLevel.get(),ConfigTool.quadiumenchantability.get(),ItemList.quadiumIngot),
+    Etherium(ConfigTool.etheriumattackDamage.get(),ConfigTool.etheriumefficiencyValue.get(),ConfigTool.etheriumdurability.get(),ConfigTool.etheriumharvestLevel.get(),ConfigTool.etheriumenchantability.get(),ItemList.etheriumIngot),
+    Byzanium(ConfigTool.byzaniumattackDamage.get(),ConfigTool.byzaniumefficiencyValue.get(),ConfigTool.byzaniumdurability.get(),ConfigTool.byzaniumharvestLevel.get(),ConfigTool.byzaniumenchantability.get(),ItemList.byzaniumIngot),
+    Bolognium(ConfigTool.bologniumattackDamage.get(),ConfigTool.bologniumefficiencyValue.get(),ConfigTool.bologniumdurability.get(),ConfigTool.bologniumharvestLevel.get(),ConfigTool.bologniumenchantability.get(),ItemList.bologniumIngot),
+    Duratine(ConfigTool.duratineattackDamage.get(),ConfigTool.duratineefficiencyValue.get(),ConfigTool.duratinedurability.get(),ConfigTool.duratineharvestLevel.get(),ConfigTool.duratineenchantability.get(),ItemList.duratineIngot),
+    Dark_iron(ConfigTool.darkironattackDamage.get(),ConfigTool.darkironefficiencyValue.get(),ConfigTool.darkirondurability.get(),ConfigTool.darkironharvestLevel.get(),ConfigTool.darkironenchantability.get(),ItemList.dark_ironIngot),
+    Arenak(ConfigTool.arenakattackDamage.get(),ConfigTool.arenakefficiencyValue.get(),ConfigTool.arenakdurability.get(),ConfigTool.arenakharvestLevel.get(),ConfigTool.arenakenchantability.get(),ItemList.arenakIngot),
+    Enderium(ConfigTool.enderiumattackDamage.get(),ConfigTool.enderiumefficiencyValue.get(),ConfigTool.enderiumdurability.get(),ConfigTool.enderiumharvestLevel.get(),ConfigTool.enderiumenchantability.get(),ItemList.enderiumIngot),
+    Enderit(ConfigTool.enderitattackDamage.get(),ConfigTool.enderitefficiencyValue.get(),ConfigTool.enderitdurability.get(),ConfigTool.enderitharvestLevel.get(),ConfigTool.enderitenchantability.get(),ItemList.enderitIngot);
 
     private float attackDamage;
     private float effi;

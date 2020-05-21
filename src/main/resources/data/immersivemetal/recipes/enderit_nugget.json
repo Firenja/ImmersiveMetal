@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "SSS",
+    "SSS",
+    "SSS"
+  ],
+  "key":
+  {
+    "S": {"tag":  "forge:nuggets/enderit"}
+  },
+
+  "result": {"item": "immersivemetal:enderit_ingot"}
+}

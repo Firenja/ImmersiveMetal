@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "S S",
+    "SSS",
+    "S S"
+  ],
+  "key":
+  {
+    "S": {"tag":  "forge:ingots/uridium"}
+  },
+
+  "result": {"item": "immersivemetal:uridium_horse_armor"}
+}

@@ -22,6 +22,8 @@
     "block.immersivemetal.tritanium_block": "Block of Tritanium",
     "block.immersivemetal.uridium_block": "Block of Uridium",
     "block.immersivemetal.zinc_block": "Block of Zinc",
+    "block.immersivemetal.enderium_block": "Block of Enderium",
+    "block.immersivemetal.enderit_block": "Block of Enderit",
 
     "_comment": "Ore",
     "block.immersivemetal.adamant_ore": "Adamant Ore",
@@ -44,6 +46,8 @@
     "block.immersivemetal.tritanium_nether_ore": "Tritanium Ore",
     "block.immersivemetal.uridium_nether_ore": "Uridium Ore",
     "block.immersivemetal.zinc_ore": "Zinc Ore",
+    "block.immersivemetal.enderium_end_ore": "Enderium Ore",
+    "block.immersivemetal.enderit_end_ore": "Enderit Ore",
 
 
     "_comment": "Ingot",
@@ -69,6 +73,8 @@
     "item.immersivemetal.tritanium_ingot": "Tritanium Ingot",
     "item.immersivemetal.uridium_ingot": "Uridium Ingot",
     "item.immersivemetal.zinc_ingot": "Zinc Ingot",
+    "item.immersivemetal.enderium_ingot": "Enderium Ingot",
+    "item.immersivemetal.enderit_ingot": "Enderit Ingot",
 
     "_comment": "Nugget",
     "item.immersivemetal.adamant_nugget": "Adamant Nugget",
@@ -93,6 +99,8 @@
     "item.immersivemetal.tritanium_nugget": "Tritanium Nugget",
     "item.immersivemetal.uridium_nugget": "Uridium Nugget",
     "item.immersivemetal.zinc_nugget": "Zinc Nugget",
+    "item.immersivemetal.enderium_nugget": "Enderium Nugget",
+    "item.immersivemetal.enderit_nugget": "Enderit Nugget",
 
     "_comment": "Axe",
     "item.immersivemetal.adamant_axe": "Adamant Axe",
@@ -115,6 +123,8 @@
     "item.immersivemetal.silver_axe": "Silver Axe",
     "item.immersivemetal.tritanium_axe": "Tritanium Axe",
     "item.immersivemetal.uridium_axe": "Uridium Axe",
+    "item.immersivemetal.enderium_axe": "Enderium Axe",
+    "item.immersivemetal.enderit_axe": "Enderit Axe",
 
     "_comment": "Shovel",
     "item.immersivemetal.adamant_shovel": "Adamant Shovel",
@@ -137,6 +147,8 @@
     "item.immersivemetal.silver_shovel": "Silver Shovel",
     "item.immersivemetal.tritanium_shovel": "Tritanium Shovel",
     "item.immersivemetal.uridium_shovel": "Uridium Shovel",
+    "item.immersivemetal.enderium_shovel": "Enderium Shovel",
+    "item.immersivemetal.enderit_shovel": "Enderit Shovel",
 
     "_comment": "Hoe",
     "item.immersivemetal.adamant_hoe": "Adamant Hoe",
@@ -159,6 +171,8 @@
     "item.immersivemetal.silver_hoe": "Silver Hoe",
     "item.immersivemetal.tritanium_hoe": "Tritanium Hoe",
     "item.immersivemetal.uridium_hoe": "Uridium Hoe",
+    "item.immersivemetal.enderium_hoe": "Enderium Hoe",
+    "item.immersivemetal.enderit_hoe": "Enderit Hoe",
 
     "_comment": "Pickaxe",
     "item.immersivemetal.adamant_pickaxe": "Adamant Pickaxe",
@@ -181,6 +195,8 @@
     "item.immersivemetal.silver_pickaxe": "Silver Pickaxe",
     "item.immersivemetal.tritanium_pickaxe": "Tritanium Pickaxe",
     "item.immersivemetal.uridium_pickaxe": "Uridium Pickaxe",
+    "item.immersivemetal.enderium_pickaxe": "Enderium Pickaxe",
+    "item.immersivemetal.enderit_pickaxe": "Enderit Pickaxe",
 
     "_comment": "Sword",
     "item.immersivemetal.adamant_sword": "Adamant Sword",
@@ -203,6 +219,8 @@
     "item.immersivemetal.silver_sword": "Silver Sword",
     "item.immersivemetal.tritanium_sword": "Tritanium Sword",
     "item.immersivemetal.uridium_sword": "Uridium Sword",
+    "item.immersivemetal.enderium_sword": "Enderium Sword",
+    "item.immersivemetal.enderit_sword": "Enderit Sword",
 
     "_comment": "Chestplate",
     "item.immersivemetal.adamant_chestplate": "Adamant Chestplate",
@@ -225,6 +243,8 @@
     "item.immersivemetal.silver_chestplate": "Silver Chestplate",
     "item.immersivemetal.tritanium_chestplate": "Tritanium Chestplate",
     "item.immersivemetal.uridium_chestplate": "Uridium Chestplate",
+    "item.immersivemetal.enderium_chestplate": "Enderium Chestplate",
+    "item.immersivemetal.enderit_chestplate": "Enderit Chestplate",
 
     "_comment": "Leggings",
     "item.immersivemetal.adamant_leggings": "Adamant Leggings",
@@ -247,6 +267,8 @@
     "item.immersivemetal.silver_leggings": "Silver Leggings",
     "item.immersivemetal.tritanium_leggings": "Tritanium Leggings",
     "item.immersivemetal.uridium_leggings": "Uridium Leggings",
+    "item.immersivemetal.enderium_leggings": "Enderium Leggings",
+    "item.immersivemetal.enderit_leggings": "Enderit Leggings",
 
     "_comment": "Boots",
     "item.immersivemetal.adamant_boots": "Adamant Boots",
@@ -269,6 +291,8 @@
     "item.immersivemetal.silver_boots": "Silver Boots",
     "item.immersivemetal.tritanium_boots": "Tritanium Boots",
     "item.immersivemetal.uridium_boots": "Uridium Boots",
+    "item.immersivemetal.enderium_boots": "Enderium Boots",
+    "item.immersivemetal.enderit_boots": "Enderit Boots",
 
     "_comment": "Helmet",
     "item.immersivemetal.adamant_helmet": "Adamant Helmet",
@@ -291,7 +315,32 @@
     "item.immersivemetal.silver_helmet": "Silver Helmet",
     "item.immersivemetal.tritanium_helmet": "Tritanium Helmet",
     "item.immersivemetal.uridium_helmet": "Uridium Helmet",
+    "item.immersivemetal.enderium_helmet": "Enderium Helmet",
+    "item.immersivemetal.enderit_helmet": "Enderit Helmet",
 
+    "_comment": "horse",
+    "item.immersivemetal.adamant_horse_armor": "Adamant Horse Armor",
+    "item.immersivemetal.arenak_horse_armor": "Arenak Horse Armor",
+    "item.immersivemetal.brass_horse_armor": "Brass Horse Armor",
+    "item.immersivemetal.bronze_horse_armor": "Bronze Horse Armor",
+    "item.immersivemetal.bolognium_horse_armor": "Bolognium Horse Armor",
+    "item.immersivemetal.byzanium_horse_armor": "Byzanium Horse Armor",
+    "item.immersivemetal.copper_horse_armor": "Copper Horse Armor",
+    "item.immersivemetal.dark_iron_horse_armor": "Dark Iron Horse Armor",
+    "item.immersivemetal.duratine_horse_armor": "Duratine Horse Armor",
+    "item.immersivemetal.etherium_horse_armor": "Etherium Horse Armor",
+    "item.immersivemetal.glowing_iron_horse_armor": "Glowing Iron Horse Armor",
+    "item.immersivemetal.hard_iron_horse_armor": "Hard Iron Horse Armor",
+    "item.immersivemetal.mithril_horse_armor": "Mithril Horse Armor",
+    "item.immersivemetal.orichalcum_horse_armor": "Orichalcum Horse Armor",
+    "item.immersivemetal.platinum_horse_armor": "Platinum Horse Armor",
+    "item.immersivemetal.promethium_horse_armor": "Promethium Horse Armor",
+    "item.immersivemetal.quadium_horse_armor": "Quadium Horse Armor",
+    "item.immersivemetal.silver_horse_armor": "Silver Horse Armor",
+    "item.immersivemetal.tritanium_horse_armor": "Tritanium Horse Armor",
+    "item.immersivemetal.uridium_horse_armor": "Uridium Horse Armor",
+    "item.immersivemetal.enderium_horse_armor": "Enderium Horse Armor",
+    "item.immersivemetal.enderit_horse_armor": "Enderit Horse Armor",
 
     "itemGroup.immersivemetal": "Immersive Metal"
 }

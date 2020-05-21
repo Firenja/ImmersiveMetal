@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "SS",
+    " T",
+    " T"
+  ],
+  "key":
+  {
+    "S": {"tag":  "forge:ingots/enderit"},
+    "T": {"item":  "minecraft:stick"}
+  },
+
+  "result": {"item": "immersivemetal:enderit_hoe"}
+}
