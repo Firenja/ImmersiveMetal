@@ -1,6 +1,7 @@
 package com.immersivemetal.config;
 
 import net.minecraftforge.common.ForgeConfigSpec;
+import net.minecraftforge.common.crafting.conditions.ICondition;
 
 public class ConfigOre
 {

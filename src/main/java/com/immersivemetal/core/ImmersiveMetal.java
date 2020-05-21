@@ -128,210 +128,162 @@ public class ImmersiveMetal
         public static void regItems(final RegistryEvent.Register<Item> event)
         {
 
-            if(false)//ConfigArmor.copperarmorenable.get())
-            {
+
                 event.getRegistry().registerAll(
                         ItemList.copperChestplate = new ArmorItem(ArmorMaterialList.copper, EquipmentSlotType.CHEST, new Item.Properties().group(immersive_metal)).setRegistryName("copper_chestplate"),
                         ItemList.copperHelmet = new ArmorItem(ArmorMaterialList.copper, EquipmentSlotType.HEAD, new Item.Properties().group(immersive_metal)).setRegistryName("copper_helmet"),
                         ItemList.copperLeggings = new ArmorItem(ArmorMaterialList.copper, EquipmentSlotType.LEGS, new Item.Properties().group(immersive_metal)).setRegistryName("copper_leggings"),
                         ItemList.copperBoots = new ArmorItem(ArmorMaterialList.copper, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("copper_boots")
                         );
-            }
-            else
-            {
-            //    JsonObject tmp = new JsonObject();
-           //     RecipeManager.deserializeRecipe(new ResourceLocation("immersivemetal", "copper_leggings"), tmp.getAsJsonObject("immersivemetalcopper_leggings.json"));
-            }
 
-            if(ConfigArmor.enderitarmorenable.get())
-            {
+
                 event.getRegistry().registerAll(
                         ItemList.enderitBoots = new ArmorItem(ArmorMaterialList.enderit, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("enderit_boots"),
                         ItemList.enderitLeggings = new ArmorItem(ArmorMaterialList.enderit, EquipmentSlotType.LEGS, new Item.Properties().group(immersive_metal)).setRegistryName("enderit_leggings"),
                         ItemList.enderitChestplate = new ArmorItem(ArmorMaterialList.enderit, EquipmentSlotType.CHEST, new Item.Properties().group(immersive_metal)).setRegistryName("enderit_chestplate"),
                         ItemList.enderitHelmet = new ArmorItem(ArmorMaterialList.enderit, EquipmentSlotType.HEAD, new Item.Properties().group(immersive_metal)).setRegistryName("enderit_helmet")
                         );
-            }
-            if(ConfigArmor.enderiumarmorenable.get())
-            {
+
                 event.getRegistry().registerAll(
                         ItemList.enderiumBoots = new ArmorItem(ArmorMaterialList.enderium, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("enderium_boots"),
                         ItemList.enderiumLeggings = new ArmorItem(ArmorMaterialList.enderium, EquipmentSlotType.LEGS, new Item.Properties().group(immersive_metal)).setRegistryName("enderium_leggings"),
                         ItemList.enderiumChestplate = new ArmorItem(ArmorMaterialList.enderium, EquipmentSlotType.CHEST, new Item.Properties().group(immersive_metal)).setRegistryName("enderium_chestplate"),
                         ItemList.enderiumHelmet = new ArmorItem(ArmorMaterialList.enderium, EquipmentSlotType.HEAD, new Item.Properties().group(immersive_metal)).setRegistryName("enderium_helmet")
                         );
-            }
-            if(ConfigArmor.arenakarmorenable.get())
-            {
+
                 event.getRegistry().registerAll(
                         ItemList.arenakHelmet = new ArmorItem(ArmorMaterialList.arenak, EquipmentSlotType.HEAD, new Item.Properties().group(immersive_metal)).setRegistryName("arenak_helmet"),
                         ItemList.arenakChestplate = new ArmorItem(ArmorMaterialList.arenak, EquipmentSlotType.CHEST, new Item.Properties().group(immersive_metal)).setRegistryName("arenak_chestplate"),
                         ItemList.arenakLeggings = new ArmorItem(ArmorMaterialList.arenak, EquipmentSlotType.LEGS, new Item.Properties().group(immersive_metal)).setRegistryName("arenak_leggings"),
                         ItemList.arenakBoots = new ArmorItem(ArmorMaterialList.arenak, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("arenak_boots")
                         );
-            }
-            if(ConfigArmor.darkironarmorenable.get())
-            {
+
                 event.getRegistry().registerAll(
                         ItemList.dark_ironBoots = new ArmorItem(ArmorMaterialList.dark_iron, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("dark_iron_boots"),
                         ItemList.dark_ironLeggings = new ArmorItem(ArmorMaterialList.dark_iron, EquipmentSlotType.LEGS, new Item.Properties().group(immersive_metal)).setRegistryName("dark_iron_leggings"),
                         ItemList.dark_ironChestplate = new ArmorItem(ArmorMaterialList.dark_iron, EquipmentSlotType.CHEST, new Item.Properties().group(immersive_metal)).setRegistryName("dark_iron_chestplate"),
                         ItemList.dark_ironHelmet = new ArmorItem(ArmorMaterialList.dark_iron, EquipmentSlotType.HEAD, new Item.Properties().group(immersive_metal)).setRegistryName("dark_iron_helmet")
                         );
-            }
-            if(ConfigArmor.duratinearmorenable.get())
-            {
+
                 event.getRegistry().registerAll(
                         ItemList.duratineHelmet = new ArmorItem(ArmorMaterialList.duratine, EquipmentSlotType.HEAD, new Item.Properties().group(immersive_metal)).setRegistryName("duratine_helmet"),
                         ItemList.duratineChestplate = new ArmorItem(ArmorMaterialList.duratine, EquipmentSlotType.CHEST, new Item.Properties().group(immersive_metal)).setRegistryName("duratine_chestplate"),
                         ItemList.duratineLeggings = new ArmorItem(ArmorMaterialList.duratine, EquipmentSlotType.LEGS, new Item.Properties().group(immersive_metal)).setRegistryName("duratine_leggings"),
                         ItemList.duratineBoots = new ArmorItem(ArmorMaterialList.duratine, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("duratine_boots")
                         );
-            }
-            if(ConfigArmor.bologniumarmorenable.get())
-            {
+
                 event.getRegistry().registerAll(
                         ItemList.bologniumBoots = new ArmorItem(ArmorMaterialList.bolognium, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("bolognium_boots"),
                         ItemList.bologniumLeggings = new ArmorItem(ArmorMaterialList.bolognium, EquipmentSlotType.LEGS, new Item.Properties().group(immersive_metal)).setRegistryName("bolognium_leggings"),
                         ItemList.bologniumChestplate = new ArmorItem(ArmorMaterialList.bolognium, EquipmentSlotType.CHEST, new Item.Properties().group(immersive_metal)).setRegistryName("bolognium_chestplate"),
                         ItemList.bologniumHelmet = new ArmorItem(ArmorMaterialList.bolognium, EquipmentSlotType.HEAD, new Item.Properties().group(immersive_metal)).setRegistryName("bolognium_helmet")
                         );
-            }
-            if(ConfigArmor.byzaniumarmorenable.get())
-            {
+
                 event.getRegistry().registerAll(
                         ItemList.byzaniumHelmet = new ArmorItem(ArmorMaterialList.byzanium, EquipmentSlotType.HEAD, new Item.Properties().group(immersive_metal)).setRegistryName("byzanium_helmet"),
                         ItemList.byzaniumChestplate = new ArmorItem(ArmorMaterialList.byzanium, EquipmentSlotType.CHEST, new Item.Properties().group(immersive_metal)).setRegistryName("byzanium_chestplate"),
                         ItemList.byzaniumLeggings = new ArmorItem(ArmorMaterialList.byzanium, EquipmentSlotType.LEGS, new Item.Properties().group(immersive_metal)).setRegistryName("byzanium_leggings"),
                         ItemList.byzaniumBoots = new ArmorItem(ArmorMaterialList.byzanium, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("byzanium_boots")
                         );
-            }
-            if(ConfigArmor.etheriumarmorenable.get())
-            {
+
                 event.getRegistry().registerAll(
                         ItemList.etheriumBoots = new ArmorItem(ArmorMaterialList.etherium, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("etherium_boots"),
                         ItemList.etheriumLeggings = new ArmorItem(ArmorMaterialList.etherium, EquipmentSlotType.LEGS, new Item.Properties().group(immersive_metal)).setRegistryName("etherium_leggings"),
                         ItemList.etheriumChestplate = new ArmorItem(ArmorMaterialList.etherium, EquipmentSlotType.CHEST, new Item.Properties().group(immersive_metal)).setRegistryName("etherium_chestplate"),
                         ItemList.etheriumHelmet = new ArmorItem(ArmorMaterialList.etherium, EquipmentSlotType.HEAD, new Item.Properties().group(immersive_metal)).setRegistryName("etherium_helmet")
                         );
-            }
-            if(ConfigArmor.quadiumarmorenable.get())
-            {
+
                 event.getRegistry().registerAll(
                         ItemList.quadiumHelmet = new ArmorItem(ArmorMaterialList.quadium, EquipmentSlotType.HEAD, new Item.Properties().group(immersive_metal)).setRegistryName("quadium_helmet"),
                         ItemList.quadiumChestplate = new ArmorItem(ArmorMaterialList.quadium, EquipmentSlotType.CHEST, new Item.Properties().group(immersive_metal)).setRegistryName("quadium_chestplate"),
                         ItemList.quadiumLeggings = new ArmorItem(ArmorMaterialList.quadium, EquipmentSlotType.LEGS, new Item.Properties().group(immersive_metal)).setRegistryName("quadium_leggings"),
                         ItemList.quadiumBoots = new ArmorItem(ArmorMaterialList.quadium, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("quadium_boots")
                         );
-            }
-            if(ConfigArmor.tritaniumarmorenable.get())
-            {
+
                 event.getRegistry().registerAll(
                         ItemList.tritaniumBoots = new ArmorItem(ArmorMaterialList.tritanium, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("tritanium_boots"),
                         ItemList.tritaniumLeggings = new ArmorItem(ArmorMaterialList.tritanium, EquipmentSlotType.LEGS, new Item.Properties().group(immersive_metal)).setRegistryName("tritanium_leggings"),
                         ItemList.tritaniumChestplate = new ArmorItem(ArmorMaterialList.tritanium, EquipmentSlotType.CHEST, new Item.Properties().group(immersive_metal)).setRegistryName("tritanium_chestplate"),
                         ItemList.tritaniumHelmet = new ArmorItem(ArmorMaterialList.tritanium, EquipmentSlotType.HEAD, new Item.Properties().group(immersive_metal)).setRegistryName("tritanium_helmet")
                         );
-            }
-            if(ConfigArmor.uridiumarmorenable.get())
-            {
+
                 event.getRegistry().registerAll(
                         ItemList.uridiumHelmet = new ArmorItem(ArmorMaterialList.uridium, EquipmentSlotType.HEAD, new Item.Properties().group(immersive_metal)).setRegistryName("uridium_helmet"),
                         ItemList.uridiumChestplate = new ArmorItem(ArmorMaterialList.uridium, EquipmentSlotType.CHEST, new Item.Properties().group(immersive_metal)).setRegistryName("uridium_chestplate"),
                         ItemList.uridiumLeggings = new ArmorItem(ArmorMaterialList.uridium, EquipmentSlotType.LEGS, new Item.Properties().group(immersive_metal)).setRegistryName("uridium_leggings"),
                         ItemList.uridiumBoots = new ArmorItem(ArmorMaterialList.uridium, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("uridium_boots")
                         );
-            }
-            if(ConfigArmor.glowingironarmorenable.get())
-            {
+
                 event.getRegistry().registerAll(
                         ItemList.glowing_ironBoots = new ArmorItem(ArmorMaterialList.glowing_iron, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("glowing_iron_boots"),
                         ItemList.glowing_ironLeggings = new ArmorItem(ArmorMaterialList.glowing_iron, EquipmentSlotType.LEGS, new Item.Properties().group(immersive_metal)).setRegistryName("glowing_iron_leggings"),
                         ItemList.glowing_ironChestplate = new ArmorItem(ArmorMaterialList.glowing_iron, EquipmentSlotType.CHEST, new Item.Properties().group(immersive_metal)).setRegistryName("glowing_iron_chestplate"),
                         ItemList.glowing_ironHelmet = new ArmorItem(ArmorMaterialList.glowing_iron, EquipmentSlotType.HEAD, new Item.Properties().group(immersive_metal)).setRegistryName("glowing_iron_helmet")
                         );
-            }
-            if(ConfigArmor.adamantarmorenable.get())
-            {
+
                 event.getRegistry().registerAll(
                         ItemList.adamantHelmet = new ArmorItem(ArmorMaterialList.adamant, EquipmentSlotType.HEAD, new Item.Properties().group(immersive_metal)).setRegistryName("adamant_helmet"),
                         ItemList.adamantChestplate = new ArmorItem(ArmorMaterialList.adamant, EquipmentSlotType.CHEST, new Item.Properties().group(immersive_metal)).setRegistryName("adamant_chestplate"),
                         ItemList.adamantLeggings = new ArmorItem(ArmorMaterialList.adamant, EquipmentSlotType.LEGS, new Item.Properties().group(immersive_metal)).setRegistryName("adamant_leggings"),
                         ItemList.adamantBoots = new ArmorItem(ArmorMaterialList.adamant, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("adamant_boots")
                         );
-            }
-            if(ConfigArmor.orichalcumarmorenable.get())
-            {
+
                 event.getRegistry().registerAll(
                         ItemList.orichalcumBoots = new ArmorItem(ArmorMaterialList.orichalcum, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("orichalcum_boots"),
                         ItemList.orichalcumLeggings = new ArmorItem(ArmorMaterialList.orichalcum, EquipmentSlotType.LEGS, new Item.Properties().group(immersive_metal)).setRegistryName("orichalcum_leggings"),
                         ItemList.orichalcumChestplate = new ArmorItem(ArmorMaterialList.orichalcum, EquipmentSlotType.CHEST, new Item.Properties().group(immersive_metal)).setRegistryName("orichalcum_chestplate"),
                         ItemList.orichalcumHelmet = new ArmorItem(ArmorMaterialList.orichalcum, EquipmentSlotType.HEAD, new Item.Properties().group(immersive_metal)).setRegistryName("orichalcum_helmet")
                         );
-            }
-            if(ConfigArmor.mithrilarmorenable.get())
-            {
+
                 event.getRegistry().registerAll(
                         ItemList.mithrilHelmet = new ArmorItem(ArmorMaterialList.mithril, EquipmentSlotType.HEAD, new Item.Properties().group(immersive_metal)).setRegistryName("mithril_helmet"),
                         ItemList.mithrilChestplate = new ArmorItem(ArmorMaterialList.mithril, EquipmentSlotType.CHEST, new Item.Properties().group(immersive_metal)).setRegistryName("mithril_chestplate"),
                         ItemList.mithrilLeggings = new ArmorItem(ArmorMaterialList.mithril, EquipmentSlotType.LEGS, new Item.Properties().group(immersive_metal)).setRegistryName("mithril_leggings"),
                         ItemList.mithrilBoots = new ArmorItem(ArmorMaterialList.mithril, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("mithril_boots")
                         );
-            }
-            if(ConfigArmor.hardironarmorenable.get())
-            {
+
                 event.getRegistry().registerAll(
                         ItemList.hard_ironBoots = new ArmorItem(ArmorMaterialList.hard_iron, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("hard_iron_boots"),
                         ItemList.hard_ironLeggings = new ArmorItem(ArmorMaterialList.hard_iron, EquipmentSlotType.LEGS, new Item.Properties().group(immersive_metal)).setRegistryName("hard_iron_leggings"),
                         ItemList.hard_ironChestplate = new ArmorItem(ArmorMaterialList.hard_iron, EquipmentSlotType.CHEST, new Item.Properties().group(immersive_metal)).setRegistryName("hard_iron_chestplate"),
                         ItemList.hard_ironHelmet = new ArmorItem(ArmorMaterialList.hard_iron, EquipmentSlotType.HEAD, new Item.Properties().group(immersive_metal)).setRegistryName("hard_iron_helmet")
                         );
-            }
-            if(ConfigArmor.promethiumarmorenable.get())
-            {
+
                 event.getRegistry().registerAll(
                         ItemList.promethiumHelmet = new ArmorItem(ArmorMaterialList.promethium, EquipmentSlotType.HEAD, new Item.Properties().group(immersive_metal)).setRegistryName("promethium_helmet"),
                         ItemList.promethiumChestplate = new ArmorItem(ArmorMaterialList.promethium, EquipmentSlotType.CHEST, new Item.Properties().group(immersive_metal)).setRegistryName("promethium_chestplate"),
                         ItemList.promethiumLeggings = new ArmorItem(ArmorMaterialList.promethium, EquipmentSlotType.LEGS, new Item.Properties().group(immersive_metal)).setRegistryName("promethium_leggings"),
                         ItemList.promethiumBoots = new ArmorItem(ArmorMaterialList.promethium, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("promethium_boots")
                         );
-            }
-            if(ConfigArmor.platinumarmorenable.get())
-            {
+
                 event.getRegistry().registerAll(
                         ItemList.platinumBoots = new ArmorItem(ArmorMaterialList.platinum, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("platinum_boots"),
                         ItemList.platinumLeggings = new ArmorItem(ArmorMaterialList.platinum, EquipmentSlotType.LEGS, new Item.Properties().group(immersive_metal)).setRegistryName("platinum_leggings"),
                         ItemList.platinumChestplate = new ArmorItem(ArmorMaterialList.platinum, EquipmentSlotType.CHEST, new Item.Properties().group(immersive_metal)).setRegistryName("platinum_chestplate"),
                         ItemList.platinumHelmet = new ArmorItem(ArmorMaterialList.platinum, EquipmentSlotType.HEAD, new Item.Properties().group(immersive_metal)).setRegistryName("platinum_helmet")
                         );
-            }
-            if(ConfigArmor.silverarmorenable.get())
-            {
+
                 event.getRegistry().registerAll(
                         ItemList.silverHelmet = new ArmorItem(ArmorMaterialList.silver, EquipmentSlotType.HEAD, new Item.Properties().group(immersive_metal)).setRegistryName("silver_helmet"),
                         ItemList.silverChestplate = new ArmorItem(ArmorMaterialList.silver, EquipmentSlotType.CHEST, new Item.Properties().group(immersive_metal)).setRegistryName("silver_chestplate"),
                         ItemList.silverLeggings = new ArmorItem(ArmorMaterialList.silver, EquipmentSlotType.LEGS, new Item.Properties().group(immersive_metal)).setRegistryName("silver_leggings"),
                         ItemList.silverBoots = new ArmorItem(ArmorMaterialList.silver, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("silver_boots")
                         );
-            }
-            if(ConfigArmor.brassarmorenable.get())
-            {
+
                 event.getRegistry().registerAll(
                         ItemList.brassBoots = new ArmorItem(ArmorMaterialList.brass, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("brass_boots"),
                         ItemList.brassLeggings = new ArmorItem(ArmorMaterialList.brass, EquipmentSlotType.LEGS, new Item.Properties().group(immersive_metal)).setRegistryName("brass_leggings"),
                         ItemList.brassChestplate = new ArmorItem(ArmorMaterialList.brass, EquipmentSlotType.CHEST, new Item.Properties().group(immersive_metal)).setRegistryName("brass_chestplate"),
                         ItemList.brassHelmet = new ArmorItem(ArmorMaterialList.brass, EquipmentSlotType.HEAD, new Item.Properties().group(immersive_metal)).setRegistryName("brass_helmet")
                         );
-            }
-            if(ConfigArmor.bronzearmorenable.get())
-            {
+
                 event.getRegistry().registerAll(
                         ItemList.bronzeHelmet = new ArmorItem(ArmorMaterialList.bronze, EquipmentSlotType.HEAD, new Item.Properties().group(immersive_metal)).setRegistryName("bronze_helmet"),
                         ItemList.bronzeChestplate = new ArmorItem(ArmorMaterialList.bronze, EquipmentSlotType.CHEST, new Item.Properties().group(immersive_metal)).setRegistryName("bronze_chestplate"),
                         ItemList.bronzeLeggings = new ArmorItem(ArmorMaterialList.bronze, EquipmentSlotType.LEGS, new Item.Properties().group(immersive_metal)).setRegistryName("bronze_leggings"),
                         ItemList.bronzeBoots = new ArmorItem(ArmorMaterialList.bronze, EquipmentSlotType.FEET, new Item.Properties().group(immersive_metal)).setRegistryName("bronze_boots")
                         );
-            }
+
 
 
             event.getRegistry().registerAll

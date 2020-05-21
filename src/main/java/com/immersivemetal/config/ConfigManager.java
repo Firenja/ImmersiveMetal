@@ -2,9 +2,12 @@ package com.immersivemetal.config;
 
 import com.electronwill.nightconfig.core.file.CommentedFileConfig;
 import com.electronwill.nightconfig.core.io.WritingMode;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.fml.loading.FMLPaths;
+import net.minecraftforge.registries.IForgeRegistryEntry;
 
+import javax.annotation.Nullable;
 import java.io.File;
 
 public class ConfigManager
@@ -18,6 +21,7 @@ public class ConfigManager
     {
         ConfigOre.init(sBuilder);
         ConfigArmor.init(sBuilder);
+        ConfigTool.init(sBuilder);
         sConfig = sBuilder.build();
     }
 
@@ -27,5 +31,8 @@ public class ConfigManager
         final CommentedFileConfig fileConfig = CommentedFileConfig.builder(new File(pathConfig)).sync().autosave().writingMode(WritingMode.REPLACE).build();
         fileConfig.load();
         config.setConfig(fileConfig);
+
     }
+
+
 }
